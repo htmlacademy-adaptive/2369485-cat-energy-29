@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Асцатур Оганджанов](https://up.htmlacademy.ru/adaptive/29/user/2369485).
-* Наставник: `Кенан Агаев`.
+* Наставник: [Кенан Агаев](https://htmlacademy.ru/profile/kenakula).
 
 ---
 
