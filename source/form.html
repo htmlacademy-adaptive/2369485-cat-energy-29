@@ -39,6 +39,128 @@
       </nav>
     </header>
     <main class="main-container main-forms">
+      <section class="pet-data">
+        <h1 class="pet-data__title title">
+          Подбор программы
+        </h1>
+        <p class="pet-data__description description">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+      <form class="pet-data__sending-server" action="https://echo.htmlacademy.ru/" method="get">
+          <ul class="pet-data__list">
+            <li class="pet-data__item">
+              <label class="pet-data__form-accessibility form-accessibility">
+                ИМЯ:*
+                <input class="pet-data__input-data input" type="text" value="Барсик" required>
+              </label>
+            </li>
+            <li class="pet-data__item">
+              <label class="pet-data__form-accessibility form-accessibility">
+                Вес (кг):*
+                <input class="pet-data__input-data input" type="text" value="7" required>
+              </label>
+            </li>
+            <li class="pet-data__item">
+              <label class="pet-data__form-accessibility form-accessibility">
+                Возраст (лет):
+                <input class="pet-data__input-data input" type="text" value="7">
+              </label>
+            </li>
+          </ul>
+          <ul class="pet-data__options-list">
+            <li class="pet-data__options-item">
+              <label class="pet-data__options-control control">
+                <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-loss" checked>
+                <span class="program-item">
+                  Похудение
+                </span>
+              </label>
+            </li>
+            <li class="pet-data__options-item">
+              <label class="pet-data__options-control control">
+                <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-gain">
+                <span class="program-item">
+                  Набор массы
+                </span>
+              </label>
+            </li>
+            <li class="pet-data__options-item">
+              <label class="pet-data__options-control control">
+                <input class="pet-data__control-input control-input" type="radio" name="program-options" value="don't-know">
+                <span class="program-item">
+                  Не знаю (Нужен ваш совет)
+                </span>
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="contact-details">
+          <h2 class="contact-details__title subtitle">
+            Контактные данные
+            (владельца кота)
+          </h2>
+          <label class="contact-details__control control">
+            E-mail:*
+            <input class="contact-details__control-input contact-details__control-input--email input " type="email" value="kuklachev@gmail.com" required>
+          </label>
+          <label class="contact-details__control control">
+            Телефон:*
+            <input class="contact-details__control-input contact-details__control-input--phone-number input" type="tel" value="8(960)900-60-90" required>
+          </label>
+        </section>
+        <section class="comments">
+          <h2 class="comments__title subtitle">
+            Комментарий
+          </h2>
+          <textarea name="comments-input" cols="30" rows="10">Расскажите обо всех повадках кота
+          </textarea>
+        </section>
+        <section class="additionally">
+          <h2 class="additionally__title subtitle">
+            Дополнительно
+          </h2>
+          <ul class="additionally__list">
+            <li class="additionally__item">
+              <label class="additionally__options-control control">
+                <input class="additionally__control-input control-input" type="checkbox" name="sweetener" checked>
+                <span class="additionally__name-additionally">
+                  Сахарозаменитель
+                </span>
+              </label>
+            </li>
+            <li class="additionally__item">
+              <label class="additionally__options-control control">
+                <input class="additionally__control-input control-input" type="checkbox" name="water">
+                <span class="additionally__name-additionally">
+                  Питьевая вода
+                </span>
+              </label>
+            </li>
+            <li class="additionally__item">
+              <label class="additionally__options-control control">
+                <input class="additionally__control-input control-input" type="checkbox" name="milk">
+                <span class="additionally__name-additionally">
+                  Молоко
+                </span>
+              </label>
+            </li>
+            <li class="additionally__item">
+              <label class="additionally__options-control control">
+                <input class="additionally__control-input control-input" type="checkbox" name="vitamins">
+                <span class="additionally__name-additionally">
+                  Витамины
+                </span>
+              </label>
+            </li>
+          </ul>
+          <button class="additionally__submit-form submit-form button-primary">
+            Отправить заявку
+          </button>
+          <b class="additionally__must-completed must-completed">
+            * — Обязательные поля
+          </b>
+        </section>
+      </form>
       <section class="location container">
         <h2 class="location__title">
           Приглашаем к сотрудничеству дилеров!
