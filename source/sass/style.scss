@@ -1,3 +1,45 @@
-body  {
-  background-color: #3dd293;
-}
+// Basic
+@use "block/basic/main-header.scss";
+@use "block/basic/site-list.scss";
+@use "block/basic/container.scss";
+@use "block/basic/button.scss";
+@use "block/basic/copyright-academy.scss";
+@use "block/basic/description.scss";
+@use "block/basic/location.scss";
+@use "block/basic/logo-lettering.scss";
+@use "block/basic/main-footer.scss";
+@use "block/basic/main-nav.scss";
+@use "block/basic/page.scss";
+@use "block/basic/social.scss";
+@use "block/basic/title.scss";
+@use "block/basic/subtitle.scss";
+@use "block/basic/telegram.scss";
+@use "block/basic/vk.scss";
+@use "block/basic/youtube.scss";
+
+// Index
+@use "block/index/hero.scss";
+@use "block/index/main-container.scss";
+@use "block/index/nutrition-program.scss";
+@use "block/index/about-properties.scss";
+@use "block/index/indicators-name.scss";
+@use "block/index/indicators.scss";
+@use "block/index/links-card.scss";
+@use "block/index/proof.scss";
+
+// Form
+@use "block/form/additionally.scss";
+@use "block/form/comments-textarea.scss";
+@use "block/form/comments.scss";
+@use "block/form/contact-details.scss";
+@use "block/form/control-input.scss";
+@use "block/form/control.scss";
+@use "block/form/form-accessibility.scss";
+@use "block/form/input.scss";
+@use "block/form/name-program.scss";
+@use "block/form/pet-data.scss";
+
+// Catalog
+@use "block/catalog/catalog-food.scss";
+@use "block/catalog/additional-goods.scss";
+@use "block/catalog/contest.scss";
