@@ -72,7 +72,7 @@
           <li class="pet-data__options-item">
             <label class="pet-data__options-control control">
               <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-loss" form="form-control" checked>
-              <span class="program-item">
+              <span class="pet-data__program-item name-program">
                 Похудение
               </span>
             </label>
@@ -80,7 +80,7 @@
           <li class="pet-data__options-item">
             <label class="pet-data__options-control control">
               <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-gain" form="form-control">
-              <span class="program-item">
+              <span class="pet-data__program-item name-program">
                 Набор массы
               </span>
             </label>
@@ -88,7 +88,7 @@
           <li class="pet-data__options-item">
             <label class="pet-data__options-control control">
               <input class="pet-data__control-input control-input" type="radio" name="program-options" value="don't-know" form="form-control">
-              <span class="program-item">
+              <span class="pet-data__program-item name-program">
                 Не знаю (Нужен ваш совет)
               </span>
             </label>
@@ -112,7 +112,7 @@
           <h2 class="comments__title subtitle">
             Комментарий
           </h2>
-          <textarea name="comments-input" cols="30" rows="10" form="form-control">Расскажите обо всех повадках кота
+          <textarea name="comments__textarea comments-textarea" cols="30" rows="10" form="form-control">Расскажите обо всех повадках кота
           </textarea>
       </div>
       <div class="additionally">
@@ -153,10 +153,10 @@
             </label>
           </li>
           </ul>
-          <button class="additionally__submit-form submit-form button" type="submit">
+          <button class="additionally__submit-form button" type="submit">
             Отправить заявку
           </button>
-          <b class="additionally__must-completed must-completed">
+          <b class="additionally__must-completed">
             * — Обязательные поля
           </b>
         </div>
