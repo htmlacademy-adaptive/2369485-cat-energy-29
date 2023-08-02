@@ -1,0 +1,51 @@
+.hero {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: -1;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../../../img/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+  }
+}
+
+.main-container__hero {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.hero__title {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.hero__description {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero__guide-button {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+}

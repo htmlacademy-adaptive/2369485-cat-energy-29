@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Каталог продукции</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
   </head>
-  <body class="page__body">
-    <header class="main-header">
+  <body class="page__body body">
+    <header class="body__main-header main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-images" src="img/logo-mobile-icon.svg" width="33" height="38" alt="Логотип с иконкой котика.">
       </a>
@@ -20,7 +23,7 @@
             Открыть меню
           </span>
         </button>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--hidden">
           <li class="site-list__item">
             <a class="site-list__link site-list__link-current" href="index.html">
               Главная
@@ -399,13 +402,19 @@
           </p>
         </div>
       </section>
-      <section class="location container">
-        <h2 class="location__title">
-          Приглашаем к сотрудничеству дилеров!
-        </h2>
-        <address class="location__company-address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+      <section class="main-container__location location">
+        <div class="location__text-wrapper">
+          <h2 class="location__title">
+            Приглашаем к сотрудничеству дилеров!
+          </h2>
+          <address class="location__company-address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
+        <div class="location__wrapper-map">
+          <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3250724730633!2d30.322581071312413!3d59.937947296703854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fbbb165ad%3A0x93c6b19d744512d5!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDEwLTgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690988153692!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -483,5 +492,6 @@
         </svg>
       </a>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,34 @@
+.main-container__about-properties {
+  margin-bottom: 49px;
+}
+
+.about-properties__title {
+  margin-top: 0;
+}
+
+.about-properties__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-properties__item {
+  margin-top: 26px;
+}
+
+.about-properties__card-description {
+  position: relative;
+  padding-left: 80px;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $base-color;
+  }
+}

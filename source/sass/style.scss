@@ -1,45 +1,68 @@
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/lato/Lato-Regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswald/oswaldregular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+// Variables
+@import "block/variables/_vars.scss";
+
 // Basic
-@use "block/basic/main-header.scss";
-@use "block/basic/site-list.scss";
-@use "block/basic/container.scss";
-@use "block/basic/button.scss";
-@use "block/basic/copyright-academy.scss";
-@use "block/basic/description.scss";
-@use "block/basic/location.scss";
-@use "block/basic/logo-lettering.scss";
-@use "block/basic/main-footer.scss";
-@use "block/basic/main-nav.scss";
-@use "block/basic/page.scss";
-@use "block/basic/social.scss";
-@use "block/basic/title.scss";
-@use "block/basic/subtitle.scss";
-@use "block/basic/telegram.scss";
-@use "block/basic/vk.scss";
-@use "block/basic/youtube.scss";
+@import "block/basic/page.scss";
+@import "block/basic/main-header.scss";
+@import "block/basic/site-list.scss";
+@import "block/basic/container.scss";
+@import "block/basic/button.scss";
+@import "block/basic/copyright-academy.scss";
+@import "block/basic/description.scss";
+@import "block/basic/location.scss";
+@import "block/basic/logo-lettering.scss";
+@import "block/basic/main-footer.scss";
+@import "block/basic/main-nav.scss";
+@import "block/basic/page.scss";
+@import "block/basic/social.scss";
+@import "block/basic/title.scss";
+@import "block/basic/subtitle.scss";
+@import "block/basic/telegram.scss";
+@import "block/basic/vk.scss";
+@import "block/basic/youtube.scss";
+@import "block/basic/visually-hidden.scss";
 
 // Index
-@use "block/index/hero.scss";
-@use "block/index/main-container.scss";
-@use "block/index/nutrition-program.scss";
-@use "block/index/about-properties.scss";
-@use "block/index/indicators-name.scss";
-@use "block/index/indicators.scss";
-@use "block/index/links-card.scss";
-@use "block/index/proof.scss";
+@import "block/index/hero.scss";
+@import "block/index/main-container.scss";
+@import "block/index/nutrition-program.scss";
+@import "block/index/about-properties.scss";
+@import "block/index/indicators-name.scss";
+@import "block/index/indicators.scss";
+@import "block/index/links-card.scss";
+@import "block/index/proof.scss";
 
 // Form
-@use "block/form/additionally.scss";
-@use "block/form/comments-textarea.scss";
-@use "block/form/comments.scss";
-@use "block/form/contact-details.scss";
-@use "block/form/control-input.scss";
-@use "block/form/control.scss";
-@use "block/form/form-accessibility.scss";
-@use "block/form/input.scss";
-@use "block/form/name-program.scss";
-@use "block/form/pet-data.scss";
+@import "block/form/additionally.scss";
+@import "block/form/comments-textarea.scss";
+@import "block/form/comments.scss";
+@import "block/form/contact-details.scss";
+@import "block/form/control-input.scss";
+@import "block/form/control.scss";
+@import "block/form/form-accessibility.scss";
+@import "block/form/input.scss";
+@import "block/form/name-program.scss";
+@import "block/form/pet-data.scss";
 
 // Catalog
-@use "block/catalog/catalog-food.scss";
-@use "block/catalog/additional-goods.scss";
-@use "block/catalog/contest.scss";
+@import "block/catalog/catalog-food.scss";
+@import "block/catalog/additional-goods.scss";
+@import "block/catalog/contest.scss";
