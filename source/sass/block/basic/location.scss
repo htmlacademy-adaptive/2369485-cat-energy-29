@@ -1,10 +1,18 @@
+.location {
+  background-color: $card-color;
+}
+
+.location--secondary {
+  background-color: #ffffff;
+}
+
 .location__title {
   color: #111111;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
 }
 
 .location__company-address {
@@ -14,7 +22,10 @@
 }
 
 .location__text-wrapper {
-  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 20px;
 }
 
 .location__wrapper-map {
