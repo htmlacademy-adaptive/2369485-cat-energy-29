@@ -1,9 +1,12 @@
 .button {
   background-color: $base-color;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  border: none;
 }
