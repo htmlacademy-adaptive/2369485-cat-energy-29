@@ -20,19 +20,30 @@
     background-image: url("../../../img/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     z-index: -2;
   }
 }
 
 .main-container__hero {
   position: relative;
+  padding: 27px 35px 10px 35px;
   z-index: 1;
-  margin-bottom: 20px;
+  margin-bottom: 198px;
+  max-height: 302px;
 }
 
 .hero__title {
   color: #ffffff;
   margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.hero__images {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
 }
 
 .hero__description {
@@ -41,9 +52,24 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
+}
+
+.hero__interective-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
 }
 
 .hero__guide-button {
+  position: relative;
+  display: block;
+  top: 48px;
+  margin: 0 20px;
+  padding: 7px 44px;
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
