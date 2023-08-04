@@ -1,0 +1,21 @@
+.button {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: $base-color;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+
+  &--secondary {
+    color: $charcoal-color;
+    background-color: $card-color;
+    padding: 10px 0;
+  }
+}

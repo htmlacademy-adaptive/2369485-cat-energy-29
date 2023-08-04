@@ -1,0 +1,31 @@
+.site-list {
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  color: $standard-black;
+}
+
+.site-list__item {
+  margin-bottom: 46px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    transform: translateY(-22px);
+    height: 1px;
+    background-color: $gainsboro-color;
+  }
+}
