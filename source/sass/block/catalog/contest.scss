@@ -8,17 +8,7 @@
   width: 100%;
   min-height: 348px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(104, 183, 56, 0.85);
-    z-index: -1;
-  }
-
+  &::before,
   &::after {
     position: absolute;
     content: "";
@@ -26,6 +16,14 @@
     height: 100%;
     top: 0;
     left: 0;
+  }
+
+  &::before {
+    background-color: $apple-color;
+    z-index: -1;
+  }
+
+  &::after {
     background-image: url("../../../img/contest-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +51,7 @@
   margin: 0;
   max-width: 161px;
   padding: 226px 61px 43px 78px;
-  color: #ffffff;
+  color: $standard-white;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 16px;

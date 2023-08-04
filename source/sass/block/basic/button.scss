@@ -12,10 +12,10 @@
   text-decoration: none;
   text-transform: uppercase;
   border: none;
-}
 
-.button--secondary {
-  color: #444444;
-  background-color: $card-color;
-  padding: 10px 0;
+  &--secondary {
+    color: $charcoal-color;
+    background-color: $card-color;
+    padding: 10px 0;
+  }
 }

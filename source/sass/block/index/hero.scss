@@ -1,15 +1,5 @@
 .hero {
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(104, 183, 56, 0.85);
-    z-index: -1;
-  }
-
+  &::after,
   &::before {
     position: absolute;
     content: "";
@@ -17,6 +7,14 @@
     height: 100%;
     top: 0;
     left: 0;
+  }
+
+  &::after {
+    background-color: $apple-color;
+    z-index: -1;
+  }
+
+  &::before {
     background-image: url("../../../img/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,16 +23,8 @@
   }
 }
 
-.main-container__hero {
-  position: relative;
-  padding: 27px 35px 10px 35px;
-  z-index: 1;
-  margin-bottom: 198px;
-  max-height: 302px;
-}
-
 .hero__title {
-  color: #ffffff;
+  color: $standard-white;
   margin-top: 0;
   margin-bottom: 25px;
 }
@@ -47,7 +37,7 @@
 }
 
 .hero__description {
-  color: #ffffff;
+  color: $standard-white;
   font-family: "Oswald", sans-serif;
   line-height: 14px;
   text-transform: uppercase;
@@ -71,7 +61,7 @@
   margin: 0 20px;
   padding: 7px 44px;
   text-decoration: none;
-  color: #ffffff;
+  color: $standard-white;
   font-size: 14px;
   line-height: 18px;
 }

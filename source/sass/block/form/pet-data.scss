@@ -1,11 +1,3 @@
-.input {
-  color: #444444;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
 .pet-data__title {
   margin-top: 0;
 }
@@ -27,7 +19,7 @@
     bottom: -24px;
     width: 100%;
     height: 1px;
-    background-color: #d9d9d9;
+    background-color: $gainsboro-color;
   }
 }
 
@@ -44,14 +36,8 @@
     bottom: -19px;
     width: 100%;
     height: 1px;
-    background-color: #d9d9d9;
+    background-color: $gainsboro-color;
   }
-}
-
-.form-accessibility {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
 }
 
 .pet-data__comments {

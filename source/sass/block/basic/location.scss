@@ -1,13 +1,13 @@
 .location {
   background-color: $card-color;
-}
 
-.location--secondary {
-  background-color: #ffffff;
+  &--secondary {
+    background-color: $standard-white;
+  }
 }
 
 .location__title {
-  color: #111111;
+  color: $shade-black;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

@@ -6,16 +6,10 @@
   text-align: center;
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .site-list__link {
   display: block;
   text-decoration: none;
-  color: #000000;
+  color: $standard-black;
 }
 
 .site-list__item {
@@ -32,6 +26,6 @@
     right: 0;
     transform: translateY(-22px);
     height: 1px;
-    background-color: #d9d9d9;
+    background-color: $gainsboro-color;
   }
 }
