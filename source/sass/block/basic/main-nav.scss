@@ -34,3 +34,19 @@
     border-top: 2px solid $standard-black;
   }
 }
+
+@media (min-width: $table-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $table-width) {
+  .main-nav__list {
+    display: flex;
+    position: relative;
+    padding: 0;
+    color: $standart-white;
+    background-color: transparent;
+  }
+}

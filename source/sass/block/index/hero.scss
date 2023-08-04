@@ -33,7 +33,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 30px;
+  top: 28px;
 }
 
 .hero__description {
@@ -64,4 +64,95 @@
   color: $standard-white;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $table-width) {
+  .hero {
+    &::after,
+    &::before {
+      position: static;
+    }
+  }
+
+  .hero__title {
+    color: $standard-black;
+  }
+
+  .hero__description {
+    color: $standard-black;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .hero__images-wrapper {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 552px;
+      height: 492px;
+      top: -150px;
+      left: 390px;
+      background-image: url("../../../img/hero-images-desctop.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+    }
+  }
+
+  .hero__images {
+    display: none;
+  }
+
+  .hero__interective-wrapper {
+    position: static;
+  }
+
+  .hero__title {
+    max-width: 346px;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+
+  .hero__description {
+    max-width: 346px;
+    text-align: start;
+    margin-bottom: 52px;
+  }
+
+  .hero__guide-button {
+    position: static;
+    display: inline-block;
+    margin: 0;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 265px;
+  }
+
+  .hero {
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 720px;
+      height: 694px;
+      top: -115px;
+      left: 665px;
+    }
+
+    &::after {
+      background-color: $apple-color;
+      z-index: -1;
+    }
+
+    &::before {
+      background-image: url("../../../img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+    }
+  }
 }

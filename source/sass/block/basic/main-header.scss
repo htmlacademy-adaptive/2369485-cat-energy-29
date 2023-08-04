@@ -10,6 +10,66 @@
   align-items: center;
 }
 
-.site-list--hidden {
-  display: none;
+@media (min-width: $table-width) {
+  .main-header {
+    padding: 25px 34px 0 30px;
+  }
+
+  .body__main-header {
+    position: static;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-header__main-nav {
+    margin-left: auto;
+  }
+
+  .main-header__logo {
+    background-image: url("../../../img/logo-tablet-header.svg");
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 50px;
+  }
+
+  .main-header__logo-lettering {
+    display: none;
+  }
+
+  .main-header__logo-images {
+    opacity: 0;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .main-header {
+    padding: 56px 110px 0 110px;
+  }
+
+  .body__main-header {
+    position: static;
+    justify-content: space-between;
+    width: 1210px;
+    margin: 0 auto;
+  }
+
+  .main-header__main-nav {
+    margin-left: auto;
+  }
+
+  .main-header__logo {
+    background-image: url("../../../img/logo-desktop-header.svg");
+    background-repeat: no-repeat;
+    width: 202px;
+    height: 59px;
+  }
+
+  .main-header__logo-lettering {
+    display: none;
+  }
+
+  .main-header__logo-images {
+    opacity: 0;
+  }
 }

@@ -34,12 +34,14 @@
 
 .proof__slider-wrapper {
   position: relative;
-  width: 24.3em;
+  width: 320px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .proof__button-slider--positioning {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-30%) translateY(-50%);
 }
