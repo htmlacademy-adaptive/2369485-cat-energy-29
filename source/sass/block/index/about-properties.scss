@@ -1,5 +1,6 @@
 .about-properties__title {
   margin-top: 0;
+  text-align: start;
 }
 
 .about-properties__list {
@@ -26,5 +27,41 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: $base-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.about-properties__card-description--substances {
+  &::after {
+    background-image: url("../../../img/card-about-leaf.svg");
+  }
+}
+
+.about-properties__card-description--powder {
+  &::after {
+    background-image: url("../../../img/card-about-powder.svg");
+  }
+}
+
+.about-properties__card-description--replace {
+  &::after {
+    background-image: url("../../../img/card-about-cutlery.svg");
+  }
+}
+
+.about-properties__card-description--changes {
+  &::after {
+    background-image: url("../../../img/card-about-time.svg");
   }
 }

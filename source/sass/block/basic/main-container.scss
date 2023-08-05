@@ -1,4 +1,5 @@
 .main-container__proof {
+  padding: 25px 20px 40px 20px;
   background-color: #eaeaea;
 }
 
@@ -19,12 +20,45 @@
 }
 
 .main-container__additional-goods {
+  margin: 0 auto;
   margin-bottom: 35px;
+  width: 280px;
+}
+
+.main-container__location {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-container__catalog-food {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: 50%;
+    width: 320px;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: $gainsboro-color;
+  }
 }
 
 @media (min-width: $table-width) {
   .main-container__hero {
     padding: 0 30px;
+    margin-bottom: 82%;
+  }
+
+  .main-container__nutrition-program {
+    margin-bottom: 45px;
+  }
+
+  .main-container__proof {
+    width: 708px;
   }
 }
 
@@ -32,6 +66,11 @@
   .main-container__hero {
     width: 1210px;
     margin: 0 auto;
-    padding: 100px 0 187px 120px;
+    padding: 100px 0 177px 160px;
+    margin-bottom: 82px;
+  }
+
+  .main-container__nutrition-program {
+    width: 1210px;
   }
 }

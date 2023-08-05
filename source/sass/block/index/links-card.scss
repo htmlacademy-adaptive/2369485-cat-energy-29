@@ -6,3 +6,10 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $table-width) {
+  .links-card {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
