@@ -24,7 +24,7 @@
   }
 
   &::after {
-    background-image: url("../../../img/contest-bg.png");
+    background-image: url("../img/contest-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -2;
@@ -42,7 +42,7 @@
     transform: translateX(-50%);
     width: 78px;
     height: 81px;
-    background-image: url("../../../img/contest-gift.svg");
+    background-image: url("../img/contest-gift.svg");
     background-repeat: no-repeat;
   }
 }

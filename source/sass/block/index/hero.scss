@@ -15,7 +15,7 @@
   }
 
   &::before {
-    background-image: url("../../../img/hero-background.jpg");
+    background-image: url("../img/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -107,7 +107,7 @@
       top: -30px;
       left: 50%;
       transform: translateX(-50%);
-      background-image: url("../../../img/hero-images-tablet.png");
+      background-image: url("../img/hero-images-tablet.png");
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
@@ -140,7 +140,7 @@
       height: 492px;
       top: -315px;
       left: 53.2%;
-      background-image: url("../../../img/hero-images-desctop.png");
+      background-image: url("../img/hero-images-desctop.png");
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
@@ -205,7 +205,7 @@
     }
 
     &::before {
-      background-image: url("../../../img/index-background-desktop.jpg");
+      background-image: url("../img/index-background-desktop.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
