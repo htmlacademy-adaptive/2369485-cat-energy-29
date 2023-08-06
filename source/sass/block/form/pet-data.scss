@@ -1,4 +1,5 @@
 .pet-data__title {
+  text-align: start;
   margin-top: 0;
 }
 
@@ -23,6 +24,14 @@
   }
 }
 
+.pet-data__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .pet-data__options-list {
   position: relative;
   padding: 0;
@@ -40,10 +49,27 @@
   }
 }
 
+.pet-data__options-item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.comments__textarea {
+  width: 274px;
+  height: 144px;
+}
+
 .pet-data__comments {
   margin-bottom: 23px;
 }
 
 .pet-data__additionally {
   margin-bottom: 32px;
+}
+
+.pet-data__contact-details {
+  margin-bottom: 24px;
 }

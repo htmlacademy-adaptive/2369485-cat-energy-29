@@ -112,3 +112,199 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: $table-width) {
+  .catalog-food__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 64px;
+    margin-bottom: 163px;
+    text-align: start;
+  }
+
+  .catalog-food__item {
+    position: relative;
+    margin-bottom: 0;
+    height: 430px;
+    padding-top: 161px;
+    padding-left: 36px;
+    padding-right: 36px;
+    box-sizing: border-box;
+    background-color: $card-color;
+
+    &::before {
+      display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog-food__item-wrapper {
+    padding-left: 0;
+  }
+
+  .catalog-food__wrapper-options {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog-food__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    row-gap: 141px;
+    column-gap: 60px;
+  }
+
+  .catalog-food__options-container {
+    width: 250px;
+    margin-bottom: 42px;
+  }
+
+  .catalog-food__name-food {
+    max-width: 150px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .catalog-food__card-images {
+    display: none;
+  }
+
+  .catalog-foot__order-link {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .catalog-foot__order-link--first-change {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: -300px;
+      width: 161px;
+      height: 172px;
+      background-image: url("../img/catalog/card-img-table-1.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .catalog-foot__order-link--second-change {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: -310px;
+      width: 161px;
+      height: 172px;
+      background-image: url("../img/catalog/card-img-table-2.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .catalog-foot__order-link--third-change {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: -300px;
+      width: 161px;
+      height: 172px;
+      background-image: url("../img/catalog/card-img-table-3.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .catalog-foot__order-link--fourth-change {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: -310px;
+      width: 161px;
+      height: 172px;
+      background-image: url("../img/catalog/card-img-table-4.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .catalog-foot__order-link--fifth-change {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: -300px;
+      width: 161px;
+      height: 172px;
+      background-image: url("../img/catalog/card-img-table-5.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .catalog-foot__order-link--sixth-change {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: -310px;
+      width: 161px;
+      height: 172px;
+      background-image: url("../img/catalog/card-img-table-6.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .catalog-foot__order-link--seventh-change {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: -300px;
+      width: 161px;
+      height: 172px;
+      background-image: url("../img/catalog/card-img-table-7.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .name-food {
+    color: $nero-color;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog-food__item--secondary {
+    display: flex;
+    flex-direction: column;
+    padding-top: 161px;
+    background-image: url("../img/plus-table.svg");
+    background-repeat: no-repeat;
+    background-position: top 52px center;
+    background-color: $standard-white;
+    border: 2px solid $card-color;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .catalog-food__show-all {
+    width: 150px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+
+  .catalog-food__dignity {
+    width: 165px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 78px;
+  }
+}

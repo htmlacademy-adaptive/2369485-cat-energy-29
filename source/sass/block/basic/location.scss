@@ -28,6 +28,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 26px 20px;
+  width: 280px;
 }
 
 .location__wrapper-map {
@@ -35,6 +36,7 @@
   // padding-bottom: 56.25%;
   position: relative;
   height: 362px;
+  width: 320px;
 }
 
 .location__map {
@@ -43,4 +45,19 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+@media (min-width: $table-width) {
+  .location__wrapper-map {
+    width: 768px;
+    height: 400px;
+  }
+
+  .location__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px;
+    width: 625px;
+  }
 }

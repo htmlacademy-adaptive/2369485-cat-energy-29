@@ -1,22 +1,34 @@
 .main-container__proof {
   padding: 25px 20px 40px 20px;
   background-color: #eaeaea;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .main-container__nutrition-program {
+  margin: 0 auto;
   margin-bottom: 20px;
+  max-width: 320px;
 }
 
 .main-container__hero {
   position: relative;
   padding: 27px 35px 10px 35px;
+  margin: 0 auto;
   z-index: 1;
   margin-bottom: 198px;
   max-height: 302px;
 }
 
+.main-container__pet-date {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .main-container__about-properties {
+  margin: 0 auto;
   margin-bottom: 49px;
+  max-width: 320px;
 }
 
 .main-container__additional-goods {
@@ -49,16 +61,43 @@
 
 @media (min-width: $table-width) {
   .main-container__hero {
+    width: 709px;
     padding: 0 30px;
-    margin-bottom: 82%;
+    margin-bottom: 635px;
   }
 
   .main-container__nutrition-program {
+    max-width: 708px;
+    margin: 0 auto;
     margin-bottom: 45px;
   }
 
   .main-container__proof {
+    position: relative;
+    background-color: $standard-white;
+    max-width: 708px;
+    padding: 0 30px;
+  }
+
+  .main-container__about-properties {
+    max-width: 708px;
+    margin-bottom: 92px;
+  }
+
+  .main-container__location {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-container__catalog-food {
+    position: relative;
     width: 708px;
+    margin: 0 auto;
+    margin-bottom: 68px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 

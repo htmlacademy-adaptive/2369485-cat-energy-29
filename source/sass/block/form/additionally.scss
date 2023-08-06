@@ -1,6 +1,7 @@
 .additionally__title {
   margin-top: 0;
   text-transform: capitalize;
+  margin-bottom: 40px;
 }
 
 .additionally__list {
@@ -10,7 +11,16 @@
   margin-bottom: 41px;
 }
 
+.additionally__item {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .additionally__must-completed {
+  display: block;
   color: $standard-black;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -19,5 +29,9 @@
 }
 
 .additionally__submit-form {
-  padding: 7px 105px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 21px;
+  width: 100%;
+  padding: 7px 44px;
 }

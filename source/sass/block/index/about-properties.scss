@@ -65,3 +65,12 @@
     background-image: url("../img/card-about-time.svg");
   }
 }
+
+@media (min-width: $table-width) {
+  .about-properties__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    row-gap: 37px;
+    column-gap: 152px;
+  }
+}

@@ -1,0 +1,15 @@
+.body__main-footer {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $table-width) {
+  .body__main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 708px;
+    padding: 61.5px 30px;
+  }
+}
