@@ -5,3 +5,18 @@
   line-height: 37px;
   text-transform: uppercase;
 }
+
+@media (min-width: $table-width) {
+  .subtitle {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .subtitle {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+

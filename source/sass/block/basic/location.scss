@@ -53,9 +53,23 @@
     height: 400px;
   }
 
+  .location__company-address {
+    text-align: end;
+  }
+
   .location__text-wrapper {
     padding: 60px 70px;
     width: 625px;
+  }
+
+  .location__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .location__city-wrapper {
+    display: block;
+    margin-top: 19px;
   }
 }
 
@@ -82,5 +96,10 @@
   .location__city-wrapper {
     display: block;
     margin-top: 19px;
+  }
+
+  .location__title {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
