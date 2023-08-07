@@ -100,3 +100,79 @@
     }
   }
 }
+
+@media (min-width: $desctop-width) {
+  .proof__text-wrapper {
+    width: 436px;
+    margin-bottom: 0;
+  }
+
+  .proof__slider-wrapper {
+    position: relative;
+    width: 560px;
+    height: 512px;
+    margin: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 462px;
+      background-color: transparent;
+      z-index: -1;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 560px;
+      height: 512px;
+      background-image: url("../img/img-slider-1-table.png");
+    }
+  }
+
+  .proof__title {
+    position: relative;
+    top: -220px;
+  }
+
+  .proof__button-slider {
+    position: relative;
+    top: 50px;
+
+    &::before {
+      height: 512px;
+    }
+  }
+
+  .proof__description {
+    margin-bottom: 69px;
+  }
+
+  .proof__indicators-wrappper {
+    display: flex;
+  }
+
+  .proof__indicators {
+    display: flex;
+    flex-direction: column;
+    margin-right: 129px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .proof__food-costs {
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .proof__intended-text {
+    margin-left: 63px;
+  }
+}

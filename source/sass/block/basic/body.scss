@@ -13,3 +13,14 @@
     padding: 61.5px 30px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .body__main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 66px 110px;
+  }
+}

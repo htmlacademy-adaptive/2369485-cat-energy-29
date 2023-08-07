@@ -122,6 +122,28 @@
   }
 
   .main-container__nutrition-program {
-    width: 1210px;
+    max-width: 1210px;
+    margin-bottom: 71px;
+  }
+
+  .main-container__about-properties {
+    max-width: 1210px;
+    margin-bottom: 205px;
+  }
+
+
+  .main-container__proof {
+    display: flex;
+    background-color: $card-color;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0 110px;
+    padding-top: 70px;
+  }
+
+  .main-container__location {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
   }
 }

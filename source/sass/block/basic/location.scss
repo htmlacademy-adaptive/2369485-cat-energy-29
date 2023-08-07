@@ -58,3 +58,29 @@
     width: 625px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .location__wrapper-map {
+    width: 1440px;
+    height: 400px;
+  }
+
+  .location__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background-color: $standard-white;
+    max-width: 565px;
+    box-sizing: border-box;
+    left: 110px;
+    top: 95px;
+    padding: 60px 78px 60px 80px;
+  }
+
+  .location__city-wrapper {
+    display: block;
+    margin-top: 19px;
+  }
+}

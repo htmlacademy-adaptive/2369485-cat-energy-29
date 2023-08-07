@@ -74,3 +74,38 @@
     column-gap: 152px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .about-properties__list {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: none;
+    row-gap: 0;
+    column-gap: 0;
+  }
+
+  .about-properties__item {
+    padding: 160px 26px 61px 0;
+    width: 224px;
+  }
+
+  .about-properties__card-description {
+    position: relative;
+    padding-left: 0;
+    margin: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: -69px;
+    }
+
+    &::after {
+      width: 30px;
+      height: 30px;
+      left: 25px;
+      top: -69px;
+    }
+  }
+}
