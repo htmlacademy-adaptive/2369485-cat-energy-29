@@ -11,3 +11,9 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .control {
+    font-size: 20px;
+  }
+}

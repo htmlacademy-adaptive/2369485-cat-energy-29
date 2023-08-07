@@ -11,3 +11,9 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .input {
+    font-size: 20px;
+  }
+}

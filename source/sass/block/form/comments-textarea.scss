@@ -12,3 +12,10 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comments-textarea {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

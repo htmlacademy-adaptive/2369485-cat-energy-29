@@ -9,3 +9,9 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-accessibility {
+    font-size: 20px;
+  }
+}
