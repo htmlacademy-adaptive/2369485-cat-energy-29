@@ -1,6 +1,7 @@
 .nutrition-program__item {
   background-color: $card-color;
   margin-bottom: 20px;
+  padding: 30px 20px 18px 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -15,6 +16,12 @@
 
 .nutrition-program__card-title {
   margin-top: 0;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.nutrition-program__card-description {
+  margin-bottom: 38px;
 }
 
 .nutrition-program__card-link {
@@ -30,7 +37,177 @@
     right: 0;
     width: 32px;
     height: 10px;
-    background-image: url("../../../img/arrow-right.svg");
+    background-image: url("../img/arrow-right.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $table-width) {
+  .nutrition-program__item {
+    position: relative;
+    padding: 77px 0  57px 54px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .nutrition-program__item--slim,
+  .nutrition-program__item--pro {
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: 2;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 200px;
+      height: 200px;
+      top: 50%;
+      transform: translateY(-47%);
+      right: 61px;
+      background-color: $base-color;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+  .nutrition-program__item--slim {
+    &::before {
+      top: 50%;
+      right: 91px;
+      transform: translateY(-54%);
+      width: 140px;
+      height: 194px;
+      background-image: url("../img/cat-slim-table.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .nutrition-program__item--pro {
+    &::before {
+      top: 50%;
+      right: 29px;
+      transform: translateY(-46%);
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/tigar-pro-table.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .nutrition-program__card-title {
+    text-align: start;
+    margin-bottom: 24px;
+  }
+
+  .nutrition-program__card-description {
+    color: $standard-black;
+    margin-bottom: 52px;
+    max-width: 339px;
+  }
+
+  .nutrition-program__card-link {
+    &::after {
+      right: -9px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition-program__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nutrition-program__item {
+    position: relative;
+    padding: 0;
+    margin-right: 80px;
+    min-width: 570px;
+    min-height: 374px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .nutrition-program__card-title {
+    text-align: center;
+    margin-left: 22px;
+    margin-top: 78px;
+    margin-bottom: 72px;
+  }
+
+  .nutrition-program__card-description {
+    margin-left: 53px;
+    max-width: 457px;
+    margin-bottom: 27px;
+  }
+
+  .nutrition-program__card-link {
+    margin-left: 52px;
+
+    &::after {
+      right: -11px;
+    }
+  }
+
+  .nutrition-program__card-title--pro {
+    margin-left: 63px;
+  }
+
+  .nutrition-program__item--slim,
+  .nutrition-program__item--pro {
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: 2;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 100px;
+      top: 94px;
+      left: 51px;
+      background-color: $base-color;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+  .nutrition-program__item--slim {
+    &::before {
+      top: 94px;
+      left: 67px;
+      transform: translateY(-54%);
+      width: 70px;
+      height: 97px;
+      background-image: url("../img/cat-slim-desctop.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .nutrition-program__item--pro {
+    &::before {
+      top: 94px;
+      left: 32px;
+      transform: translateY(-46%);
+      width: 134px;
+      height: 56px;
+      background-image: url("../img/tigar-pro-desctop.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      top: 94px;
+      left: 53px;
+    }
   }
 }

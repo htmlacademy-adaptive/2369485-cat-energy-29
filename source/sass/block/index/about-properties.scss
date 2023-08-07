@@ -1,5 +1,6 @@
 .about-properties__title {
   margin-top: 0;
+  text-align: start;
 }
 
 .about-properties__list {
@@ -26,5 +27,85 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: $base-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.about-properties__card-description--substances {
+  &::after {
+    background-image: url("../img/card-about-leaf.svg");
+  }
+}
+
+.about-properties__card-description--powder {
+  &::after {
+    background-image: url("../img/card-about-powder.svg");
+  }
+}
+
+.about-properties__card-description--replace {
+  &::after {
+    background-image: url("../img/card-about-cutlery.svg");
+  }
+}
+
+.about-properties__card-description--changes {
+  &::after {
+    background-image: url("../img/card-about-time.svg");
+  }
+}
+
+@media (min-width: $table-width) {
+  .about-properties__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    row-gap: 37px;
+    column-gap: 152px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-properties__list {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: none;
+    row-gap: 0;
+    column-gap: 0;
+  }
+
+  .about-properties__item {
+    padding: 160px 26px 61px 0;
+    width: 224px;
+  }
+
+  .about-properties__card-description {
+    position: relative;
+    padding-left: 0;
+    margin: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: -69px;
+    }
+
+    &::after {
+      width: 30px;
+      height: 30px;
+      left: 25px;
+      top: -69px;
+    }
   }
 }

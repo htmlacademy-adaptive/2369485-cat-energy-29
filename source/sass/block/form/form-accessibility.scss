@@ -3,3 +3,15 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $table-width) {
+  .form-accessibility {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-accessibility {
+    font-size: 20px;
+  }
+}

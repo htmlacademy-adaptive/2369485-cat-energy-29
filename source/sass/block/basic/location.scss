@@ -13,12 +13,14 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  width: 148px;
 }
 
 .location__company-address {
   font-family: "Lato", sans-serif;
   font-style: normal;
   line-height: 20px;
+  width: 140px;
 }
 
 .location__text-wrapper {
@@ -26,13 +28,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 26px 20px;
+  width: 280px;
 }
 
 .location__wrapper-map {
   overflow: hidden;
-  padding-bottom: 56.25%;
+  // padding-bottom: 56.25%;
   position: relative;
-  height: 0;
+  height: 362px;
+  width: 320px;
 }
 
 .location__map {
@@ -41,4 +45,61 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+@media (min-width: $table-width) {
+  .location__wrapper-map {
+    width: 768px;
+    height: 400px;
+  }
+
+  .location__company-address {
+    text-align: end;
+  }
+
+  .location__text-wrapper {
+    padding: 60px 70px;
+    width: 625px;
+  }
+
+  .location__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .location__city-wrapper {
+    display: block;
+    margin-top: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__wrapper-map {
+    width: 1440px;
+    height: 400px;
+  }
+
+  .location__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background-color: $standard-white;
+    max-width: 565px;
+    box-sizing: border-box;
+    left: 110px;
+    top: 95px;
+    padding: 60px 78px 60px 80px;
+  }
+
+  .location__city-wrapper {
+    display: block;
+    margin-top: 19px;
+  }
+
+  .location__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

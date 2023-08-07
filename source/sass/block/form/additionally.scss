@@ -1,6 +1,7 @@
 .additionally__title {
   margin-top: 0;
   text-transform: capitalize;
+  margin-bottom: 40px;
 }
 
 .additionally__list {
@@ -10,7 +11,16 @@
   margin-bottom: 41px;
 }
 
+.additionally__item {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .additionally__must-completed {
+  display: block;
   color: $standard-black;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -19,5 +29,59 @@
 }
 
 .additionally__submit-form {
-  padding: 7px 105px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 21px;
+  width: 100%;
+  padding: 7px 44px;
+}
+
+@media (min-width: $table-width) {
+  .additionally__title {
+    margin-bottom: 57px;
+  }
+
+  .additionally__list {
+    display: grid;
+    grid-template-columns: 221px 221px;
+    column-gap: 123px;
+    row-gap: 32px;
+    margin-bottom: 54px;
+  }
+
+  .additionally__submit-form {
+    display: inline-block;
+    margin: 0;
+    width: 282px;
+    padding: 14px 45px;
+    margin-right: 64px;
+  }
+
+  .additionally__must-completed {
+    display: inline;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__list {
+    display: flex;
+    row-gap: 0;
+    column-gap: 0;
+  }
+
+  .additionally__item {
+    margin-right: 104px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .additionally__submit-form {
+    padding: 16px 0;
+    min-width: 570px;
+    margin-right: 80px;
+    font-size: 20px;
+  }
 }

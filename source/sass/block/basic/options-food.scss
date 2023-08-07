@@ -9,3 +9,10 @@
     line-height: 14px;
   }
 }
+
+@media (min-width: $table-width) {
+  .options-food {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

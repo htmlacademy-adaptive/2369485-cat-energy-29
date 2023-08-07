@@ -14,7 +14,7 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-images" src="img/logo-mobile-icon.svg" width="33" height="38" alt="Логотип с иконкой котика.">
       </a>
-      <a class="main-header__logo logo-lettering" href="index.html">
+      <a class="main-header__logo main-header__logo-lettering logo-lettering" href="index.html">
         <img class="main-header__logo-images" src="img/logo-text.svg" width="101" height="18" alt="Логотип с надписью 'Cat Energy'.">
       </a>
       <nav class="main-header__main-nav main-nav">
@@ -44,14 +44,18 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="main-container__hero hero container">
-        <h1 class="hero__title title">
-          Функциональное питание для котов
-        </h1>
-        <p class="hero__description description">
-          Занялся собой? Займись котом!
-        </p>
-        <img class="hero__images" src="img/hero-images.png" width="280" height="270" alt="Упаковка товара Cat Energy">
+      <section class="main-container__hero hero hero--secondary container">
+        <div class="hero__text-wrapper">
+          <h1 class="hero__title title">
+            Функциональное питание для котов
+          </h1>
+          <p class="hero__description description">
+            Занялся собой? Займись котом!
+          </p>
+        </div>
+        <div class="hero__images-wrapper">
+          <img class="hero__images" src="img/hero-images.png" width="280" height="270" alt="Упаковка товара Cat Energy">
+        </div>
         <div class="hero__interective-wrapper">
           <a class="hero__guide-button button" href="form.html">
             Подобрать программу
@@ -63,7 +67,7 @@
           Готовые программы питания
         </h2>
         <ul class="nutrition-program__list">
-          <li class="nutrition-program__item">
+          <li class="nutrition-program__item nutrition-program__item--slim">
             <h3 class="nutrition-program__card-title subtitle">
               Похудение
             </h3>
@@ -74,8 +78,8 @@
               Каталог slim
             </a>
           </li>
-          <li class="nutrition-program__item">
-            <h3 class="nutrition-program__card-title subtitle">
+          <li class="nutrition-program__item nutrition-program__item--pro">
+            <h3 class="nutrition-program__card-title nutrition-program__card-title--pro subtitle">
               Набор массы
             </h3>
             <p class="nutrition-program__card-description description">
@@ -115,27 +119,31 @@
         </ul>
       </section>
       <section class="main-container__proof proof container">
-        <h2 class="proof__title title">
-          Живой пример
-        </h2>
-        <p class="proof__description description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <b class="proof__indicators indicators">
-          5 КГ
-          <span class="proof__indicators-name indicators-name">
-            Снижение веса
-          </span>
-        </b>
-        <b class="proof__indicators indicators">
-          60 ДНЕЙ
-          <span class="proof__indicators-name indicators-name">
-            Затрачено времени
-          </span>
-        </b>
-        <b class="proof__food-costs">
-          Затраты на питание: 15 000 РУБ.
-        </b>
+        <div class="proof__text-wrapper">
+          <h2 class="proof__title title">
+            Живой пример
+          </h2>
+          <p class="proof__description description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="proof__indicators-wrappper">
+            <b class="proof__indicators indicators">
+              5 КГ
+              <span class="proof__indicators-name indicators-name">
+                Снижение веса
+              </span>
+            </b>
+            <b class="proof__indicators indicators">
+              60 ДНЕЙ
+              <span class="proof__indicators-name indicators-name">
+                Затрачено времени
+              </span>
+            </b>
+          </div>
+          <b class="proof__food-costs">
+            Затраты на питание: <span class="proof__intended-text">15 000 РУБ.</span>
+          </b>
+        </div>
         <div class="proof__slider-wrapper">
           <img class="proof__img-slider" src="img/img-slider-1-phone.png" width="280" height="256" alt="Фотография кота">
           <button class="proof__button-slider proof__button-slider--positioning" type="button">
@@ -148,16 +156,16 @@
             Приглашаем к сотрудничеству дилеров!
           </h2>
           <address class="location__company-address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <span class="location__city-wrapper">Санкт-Петербург</span>
           </address>
         </div>
-        <div class="location__wrapper-map">
-          <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65486144267425!2d30.322654569695363!3d59.93845667023174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb65f519d%3A0x778ab0e0d2dd056b!2z0KHQotCQ0JvQrNCc0JDQmiDQmCDQmtCe!5e0!3m2!1sru!2sru!4v1691041913935!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+          <div class="location__wrapper-map">
+            <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65486144267425!2d30.322654569695363!3d59.93845667023174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb65f519d%3A0x778ab0e0d2dd056b!2z0KHQotCQ0JvQrNCc0JDQmiDQmCDQmtCe!5e0!3m2!1sru!2sru!4v1691041913935!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
       </section>
     </main>
-    <footer class="main-footer container">
+    <footer class="body__main-footer main-footer">
       <div class="main-footer__logo-wrapper">
         <a class="main-footer__logo logo-lettering" href="#">
           <span class="visually-hidden">
@@ -220,19 +228,21 @@
           </li>
         </ul>
       </section>
-      <a class="main-footer__copyright copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
-      </a>
-      <a class="main-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="main-footer__academy-images" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
-          <defs>
-          <clipPath id="clip0_91922_69">
-          <rect width="27" height="34" fill="white"/>
-          </clipPath>
-          </defs>
-        </svg>
-      </a>
+      <div class="main-footer__link-wrapper--copyright">
+        <a class="main-footer__copyright copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+        <a class="main-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="main-footer__academy-images" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+            <defs>
+            <clipPath id="clip0_91922_69">
+            <rect width="27" height="34" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
     </footer>
     <script src="js/script.js"></script>
   </body>

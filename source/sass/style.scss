@@ -2,6 +2,7 @@
 @import "block/variables/_vars.scss";
 
 // Basic
+@import "block/basic/body.scss";
 @import "block/basic/font-face.scss";
 @import "block/basic/page.scss";
 @import "block/basic/main-header.scss";
@@ -22,6 +23,7 @@
 @import "block/basic/vk.scss";
 @import "block/basic/youtube.scss";
 @import "block/basic/visually-hidden.scss";
+@import "block/basic/options-food.scss";
 
 // Index
 @import "block/index/hero.scss";
@@ -48,3 +50,4 @@
 @import "block/catalog/catalog-food.scss";
 @import "block/catalog/additional-goods.scss";
 @import "block/catalog/contest.scss";
+@import "block/catalog/name-food.scss"

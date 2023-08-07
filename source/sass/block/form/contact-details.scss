@@ -2,8 +2,29 @@
   margin-top: 0;
   line-height: 26px;
   text-transform: capitalize;
+  margin-bottom: 35px;
 }
 
-.pet-data__contact-details {
-  margin-bottom: 24px;
+.contact-details__control {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $table-width) {
+  .contact-details__title {
+    margin-bottom: 76px;
+  }
+
+  .contact-details__control {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-details__title {
+    margin-bottom: 76px;
+  }
 }

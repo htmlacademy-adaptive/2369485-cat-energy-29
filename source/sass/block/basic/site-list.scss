@@ -12,6 +12,10 @@
   color: $standard-black;
 }
 
+.site-list--hidden {
+  display: none;
+}
+
 .site-list__item {
   margin-bottom: 46px;
 
@@ -24,8 +28,78 @@
     content: "";
     left: 0;
     right: 0;
-    transform: translateY(-22px);
+    transform: translateY(-23px);
     height: 1px;
     background-color: $gainsboro-color;
+  }
+}
+
+@media (min-width: $table-width) {
+  .site-list__item {
+    margin-right: 34px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .site-list__link {
+    padding: 0;
+  }
+
+  .site-list__link-current {
+    text-decoration: underline;
+    text-decoration-color: $base-color;
+    text-underline-position: under;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link-current {
+    text-decoration: underline;
+    text-decoration-color: $standard-white;
+    text-underline-position: under;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+  }
+
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-list__link {
+    color: $standard-white;
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .site-list__item {
+    margin-right: 35px;
+  }
+
+  .site-list__link--secondary {
+    color: $standard-black;
+  }
+
+  .site-list__link-current--secondary {
+    text-decoration-color: $base-color;
   }
 }
