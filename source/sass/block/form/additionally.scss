@@ -64,3 +64,26 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .additionally__list {
+    display: flex;
+    row-gap: 0;
+    column-gap: 0;
+  }
+
+  .additionally__item {
+    margin-right: 104px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .additionally__submit-form {
+    padding: 16px 0;
+    min-width: 570px;
+    margin-right: 80px;
+    font-size: 20px;
+  }
+}

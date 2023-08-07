@@ -110,3 +110,40 @@
     margin-bottom: 53px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .pet-date__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 69px;
+  }
+
+  .pet-data__options-list {
+    min-width: 568px;
+    min-height: 200px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .pet-data__list {
+    margin-bottom: 0;
+  }
+
+  .contact-details__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pet-data__contact-details {
+    margin-bottom: 67px;
+  }
+
+  .pet-data__comments {
+    margin-bottom: 67px;
+  }
+
+  .pet-data__additionally {
+    margin-bottom: 82px;
+  }
+}

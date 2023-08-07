@@ -24,3 +24,9 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .contact-details__title {
+    margin-bottom: 76px;
+  }
+}

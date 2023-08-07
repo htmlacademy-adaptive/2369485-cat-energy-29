@@ -46,71 +46,75 @@
     <main class="main-container main-forms">
       <section class="main-container__pet-date pet-data container">
         <form class="pet-data__sending-server" id="form-control" action="https://echo.htmlacademy.ru/" method="get">
-        <h1 class="pet-data__title title">
-          Подбор программы
-        </h1>
-        <p class="pet-data__description description">
-          Заполните анкету, и мы подберем программу питания для вашего кота
-        </p>
-        <ul class="pet-data__list">
-          <li class="pet-data__item">
-            <label class="pet-data__form-accessibility form-accessibility">
-              ИМЯ:*
-              <input class="pet-data__input-data input" type="text" value="Барсик" form="form-control" required>
-            </label>
-          </li>
-          <li class="pet-data__item">
-            <label class="pet-data__form-accessibility form-accessibility">
-              Вес (кг):*
-              <input class="pet-data__input-data input" type="text" value="7" form="form-control" required>
-            </label>
-          </li>
-          <li class="pet-data__item">
-            <label class="pet-data__form-accessibility form-accessibility">
-              Возраст (лет):
-              <input class="pet-data__input-data input" type="text" value="7" form="form-control">
-            </label>
-          </li>
-        </ul>
-        <ul class="pet-data__options-list">
-          <li class="pet-data__options-item">
-            <label class="pet-data__options-control control">
-              <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-loss" form="form-control" checked>
-              <span class="pet-data__program-item name-program">
-                Похудение
-              </span>
-            </label>
-          </li>
-          <li class="pet-data__options-item">
-            <label class="pet-data__options-control control">
-              <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-gain" form="form-control">
-              <span class="pet-data__program-item name-program">
-                Набор массы
-              </span>
-            </label>
-          </li>
-          <li class="pet-data__options-item">
-            <label class="pet-data__options-control control">
-              <input class="pet-data__control-input control-input" type="radio" name="program-options" value="don't-know" form="form-control">
-              <span class="pet-data__program-item name-program">
-                Не знаю (Нужен ваш совет)
-              </span>
-            </label>
-          </li>
-        </ul>
+          <h1 class="pet-data__title title">
+            Подбор программы
+          </h1>
+          <p class="pet-data__description description">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+          </p>
+          <div class="pet-date__container">
+            <ul class="pet-data__list">
+              <li class="pet-data__item">
+                <label class="pet-data__form-accessibility form-accessibility">
+                  ИМЯ:*
+                  <input class="pet-data__input-data input" type="text" value="Барсик" form="form-control" required>
+                </label>
+              </li>
+              <li class="pet-data__item">
+                <label class="pet-data__form-accessibility form-accessibility">
+                  Вес (кг):*
+                  <input class="pet-data__input-data input" type="text" value="7" form="form-control" required>
+                </label>
+              </li>
+              <li class="pet-data__item">
+                <label class="pet-data__form-accessibility form-accessibility">
+                  Возраст (лет):
+                  <input class="pet-data__input-data input" type="text" value="7" form="form-control">
+                </label>
+              </li>
+            </ul>
+            <ul class="pet-data__options-list">
+              <li class="pet-data__options-item">
+                <label class="pet-data__options-control control">
+                  <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-loss" form="form-control" checked>
+                  <span class="pet-data__program-item name-program">
+                    Похудение
+                  </span>
+                </label>
+              </li>
+              <li class="pet-data__options-item">
+                <label class="pet-data__options-control control">
+                  <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-gain" form="form-control">
+                  <span class="pet-data__program-item name-program">
+                    Набор массы
+                  </span>
+                </label>
+              </li>
+              <li class="pet-data__options-item">
+                <label class="pet-data__options-control control">
+                  <input class="pet-data__control-input control-input" type="radio" name="program-options" value="don't-know" form="form-control">
+                  <span class="pet-data__program-item name-program">
+                    Не знаю (Нужен ваш совет)
+                  </span>
+                </label>
+              </li>
+            </ul>
+        </div>
         <div class="pet-data__contact-details contact-details">
           <h2 class="contact-details__title subtitle">
             Контактные данные
             (владельца кота)
           </h2>
-        <label class="contact-details__control control">
-          E-mail:*
-          <input class="contact-details__control-input contact-details__control-input--email input " type="email" value="kuklachev@gmail.com" form="form-control" required>
-        </label>
-        <label class="contact-details__control control">
-          Телефон:*
-          <input class="contact-details__control-input contact-details__control-input--phone-number input" type="tel" value="8(960)900-60-90" form="form-control" required>
-        </label>
+          <div class="contact-details__wrapper">
+            <label class="contact-details__control control">
+              E-mail:*
+              <input class="contact-details__control-input contact-details__control-input--email input " type="email" value="kuklachev@gmail.com" form="form-control" required>
+            </label>
+            <label class="contact-details__control control">
+              Телефон:*
+              <input class="contact-details__control-input contact-details__control-input--phone-number input" type="tel" value="8(960)900-60-90" form="form-control" required>
+            </label>
+          </div>
       </div>
       <div class="pet-data__comments comments">
           <h2 class="comments__title subtitle">

@@ -21,3 +21,14 @@
     height: 175px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .comments__title {
+    margin-bottom: 76px;
+  }
+
+  .comments__textarea {
+    width: 1214px;
+    height: 168px;
+  }
+}

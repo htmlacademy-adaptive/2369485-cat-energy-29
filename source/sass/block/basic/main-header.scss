@@ -14,14 +14,17 @@
 
 @media (min-width: $table-width) {
   .main-header {
-    padding: 25px 34px 0 30px;
+    padding-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .body__main-header {
     position: static;
     justify-content: space-between;
     margin: 0 auto;
-    width: 708px;
+    width: 704px;
+    box-sizing: border-box;
   }
 
   .main-header__main-nav {
