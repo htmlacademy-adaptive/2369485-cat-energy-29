@@ -58,3 +58,32 @@
 .additional-goods__order-button {
   display: block;
 }
+
+@media (min-width: $table-width) {
+  .additional-goods__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 40px;
+  }
+
+  .additional-goods__container {
+    margin-bottom: 69px;
+    border: 1px solid #cdcdcd;
+    padding: 26px 38px 28px 38px;
+  }
+
+  .additional-goods__wrapper-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+
+  .additional-goods__options {
+    margin-right: 49px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

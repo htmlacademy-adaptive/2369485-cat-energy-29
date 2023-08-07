@@ -99,6 +99,12 @@
       display: none;
     }
   }
+
+  .main-container__additional-goods {
+    margin: 0 auto;
+    margin-bottom: 76px;
+    width: 708px;
+  }
 }
 
 @media (min-width: $desctop-width) {
