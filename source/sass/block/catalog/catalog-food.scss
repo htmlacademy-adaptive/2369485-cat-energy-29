@@ -271,12 +271,6 @@
     }
   }
 
-  .name-food {
-    color: $nero-color;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
   .catalog-food__item--secondary {
     display: flex;
     flex-direction: column;
@@ -306,5 +300,118 @@
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 78px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .catalog-food__list {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    row-gap: 143px;
+    column-gap: 80px;
+  }
+
+  .catalog-food__item {
+    position: relative;
+    margin-bottom: 0;
+    min-height: 431px;
+    padding-top: 162px;
+    padding-left: 36px;
+    padding-right: 36px;
+    box-sizing: border-box;
+    background-color: $card-color;
+
+    &::before {
+      display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog-foot__order-link--first-change {
+    &::before {
+      left: 15px;
+      top: -300px;
+      width: 161px;
+      height: 172px;
+    }
+  }
+
+  .catalog-foot__order-link--second-change {
+    &::before {
+      left: 5px;
+      top: -310px;
+      width: 172px;
+      height: 196px;
+      background-image: url("../img/catalog/card-img-desctop-2.jpg");
+    }
+  }
+
+  .catalog-foot__order-link--third-change {
+    &::before {
+      left: 15px;
+      top: -300px;
+      width: 161px;
+      height: 172px;
+    }
+  }
+
+  .catalog-foot__order-link--fourth-change {
+    &::before {
+      left: 5px;
+      top: -310px;
+      width: 172px;
+      height: 196px;
+      background-image: url("../img/catalog/card-img-desctop-4.jpg");
+    }
+  }
+
+  .catalog-foot__order-link--fifth-change {
+    &::before {
+      left: 15px;
+      top: -300px;
+      width: 161px;
+      height: 172px;
+    }
+  }
+
+  .catalog-foot__order-link--sixth-change {
+    &::before {
+      left: 5px;
+      top: -310px;
+      width: 172px;
+      height: 196px;
+      background-image: url("../img/catalog/card-img-desctop-6.jpg");
+    }
+  }
+
+  .catalog-foot__order-link--seventh-change {
+    &::before {
+      left: 15px;
+      top: -300px;
+      width: 161px;
+      height: 172px;
+    }
+  }
+
+  .catalog-food__name-food {
+    margin-bottom: 21px;
+  }
+
+  .catalog-food__item--secondary {
+    display: flex;
+    flex-direction: column;
+    padding-top: 161px;
+    background-image: url("../img/plus-table.svg");
+    background-repeat: no-repeat;
+    background-position: top 52px center;
+    background-color: $standard-white;
+    border: 2px solid $card-color;
+
+    &::after {
+      display: none;
+    }
   }
 }

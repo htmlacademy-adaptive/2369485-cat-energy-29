@@ -82,3 +82,23 @@
     text-align: start;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .additional-goods__contest {
+    position: relative;
+    width: 245px;
+    height: 289px;
+    padding: 184px 43px 42px 43px;
+
+    &::after {
+      background-image: url("../img/contest-bg-desctop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+    }
+  }
+
+  .contest__description {
+    text-align: center;
+  }
+}

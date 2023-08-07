@@ -94,4 +94,12 @@
   .site-list__item {
     margin-right: 35px;
   }
+
+  .site-list__link--secondary {
+    color: $standard-black;
+  }
+
+  .site-list__link-current--secondary {
+    text-decoration-color: $base-color;
+  }
 }
