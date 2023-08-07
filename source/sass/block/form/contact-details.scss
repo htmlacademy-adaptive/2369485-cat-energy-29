@@ -5,14 +5,22 @@
   margin-bottom: 35px;
 }
 
-.pet-data__contact-details {
-  margin-bottom: 24px;
-}
-
 .contact-details__control {
   margin-bottom: 14px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $table-width) {
+  .contact-details__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .contact-details__control {
+    margin-bottom: 20px;
   }
 }

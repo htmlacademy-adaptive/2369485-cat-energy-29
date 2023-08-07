@@ -5,3 +5,9 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $table-width) {
+  .control {
+    font-size: 20px;
+  }
+}

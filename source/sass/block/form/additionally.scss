@@ -35,3 +35,32 @@
   width: 100%;
   padding: 7px 44px;
 }
+
+@media (min-width: $table-width) {
+  .additionally__title {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additionally__list {
+    display: grid;
+    grid-template-columns: 221px 221px;
+    column-gap: 123px;
+    row-gap: 32px;
+    margin-bottom: 54px;
+  }
+
+  .additionally__submit-form {
+    display: inline-block;
+    margin: 0;
+    width: 282px;
+    padding: 14px 45px;
+    margin-right: 64px;
+  }
+
+  .additionally__must-completed {
+    display: inline;
+    font-size: 16px;
+  }
+}
