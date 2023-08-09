@@ -1,10 +1,24 @@
 .pet-data__title {
   text-align: start;
   margin-top: 0;
+
+  @media (min-width: $table-width) {
+    text-align: start;
+    margin-top: 0;
+    margin-bottom: 54px;
+  }
 }
 
 .pet-data__description {
   text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    max-width: 323px;
+    color: $standard-black;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .pet-data__list {
@@ -21,6 +35,16 @@
     width: 100%;
     height: 1px;
     background-color: $gainsboro-color;
+  }
+
+  @media (min-width: $table-width) {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -47,6 +71,23 @@
     height: 1px;
     background-color: $gainsboro-color;
   }
+
+  @media (min-width: $table-width) {
+    border: 1px solid #e7e7e7;
+    padding: 25px;
+    margin-bottom: 71px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+    min-height: 200px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
 }
 
 .pet-data__options-item {
@@ -59,53 +100,33 @@
 
 .pet-data__comments {
   margin-bottom: 23px;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .pet-data__additionally {
   margin-bottom: 32px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .pet-data__contact-details {
   margin-bottom: 24px;
-}
 
-@media (min-width: $table-width) {
-  .pet-data__list {
-    &::after {
-      display: none;
-    }
-  }
-
-  .pet-data__options-list {
-    border: 1px solid #e7e7e7;
-    padding: 25px;
-    margin-bottom: 71px;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .pet-data__title {
-    text-align: start;
-    margin-top: 0;
-    margin-bottom: 54px;
-  }
-
-  .pet-data__description {
-    max-width: 323px;
-    color: $standard-black;
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .pet-data__contact-details {
+  @media (min-width: $table-width) {
     margin-bottom: 65px;
   }
 
-  .pet-data__comments {
-    margin-bottom: 53px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
   }
 }
 
@@ -117,31 +138,8 @@
     margin-bottom: 69px;
   }
 
-  .pet-data__options-list {
-    min-width: 568px;
-    min-height: 200px;
-    margin-bottom: 0;
-    box-sizing: border-box;
-  }
-
-  .pet-data__list {
-    margin-bottom: 0;
-  }
-
   .contact-details__wrapper {
     display: flex;
     justify-content: space-between;
-  }
-
-  .pet-data__contact-details {
-    margin-bottom: 67px;
-  }
-
-  .pet-data__comments {
-    margin-bottom: 67px;
-  }
-
-  .pet-data__additionally {
-    margin-bottom: 82px;
   }
 }

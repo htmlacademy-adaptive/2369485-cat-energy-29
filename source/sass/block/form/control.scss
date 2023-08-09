@@ -4,16 +4,13 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-}
 
-@media (min-width: $table-width) {
-  .control {
+  @media (min-width: $table-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 20px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .control {
-    font-size: 20px;
-  }
-}
