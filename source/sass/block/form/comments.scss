@@ -15,6 +15,19 @@
 .comments__textarea {
   width: 274px;
   height: 144px;
+  border: none;
+  outline: 1px solid $whisper;
+
+  &:hover {
+    outline-color: $light-grey;
+  }
+
+  &:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: $charcoal-color;
+    border-radius: 0;
+  }
 
   @media (min-width: $table-width) {
     width: 100%;

@@ -135,6 +135,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 21px;
+    text-align: center;
   }
 }
 
@@ -146,12 +147,17 @@
 .catalog-food__item-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 13px;
   padding-left: 28px;
 
   @media (min-width: $table-width) {
     padding-left: 0;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-bottom: 33px;
   }
 }
 
@@ -162,11 +168,13 @@
   width: 140px;
 
   @media (min-width: $table-width) {
-    margin-bottom: 16px;
+    margin-bottom: 0;
+    width: 100%;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 100%;
   }
 }
 
@@ -199,6 +207,10 @@
     line-height: 18px;
     margin-bottom: 78px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .catalog-food__wrapper-options {
@@ -206,8 +218,21 @@
   justify-content: space-between;
 
   @media (min-width: $table-width) {
-    width: 250px;
-    margin-bottom: 42px;
+    width: 248px;
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 165px;
+    margin-bottom: 15.68px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -81,6 +81,10 @@
   padding: 4px 0;
   padding-right: 47px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     content: "";

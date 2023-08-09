@@ -56,19 +56,19 @@
             <ul class="pet-data__list">
               <li class="pet-data__item">
                 <label class="pet-data__form-accessibility form-accessibility">
-                  ИМЯ:*
+                  <span class="form-accessibility__name-input">ИМЯ:*</span>
                   <input class="pet-data__input-data input" type="text" value="Барсик" form="form-control" required>
                 </label>
               </li>
               <li class="pet-data__item">
                 <label class="pet-data__form-accessibility form-accessibility">
-                  Вес (кг):*
+                  <span class="form-accessibility__name-input">Вес (кг):*</span>
                   <input class="pet-data__input-data input" type="text" value="7" form="form-control" required>
                 </label>
               </li>
               <li class="pet-data__item">
                 <label class="pet-data__form-accessibility form-accessibility">
-                  Возраст (лет):
+                  <span class="form-accessibility__name-input">Возраст (лет):</span>
                   <input class="pet-data__input-data input" type="text" value="7" form="form-control">
                 </label>
               </li>
@@ -76,7 +76,9 @@
             <ul class="pet-data__options-list">
               <li class="pet-data__options-item">
                 <label class="pet-data__options-control control">
-                  <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-loss" form="form-control" checked>
+                  <input class="pet-data__control-input control-input visually-hidden" type="radio" name="program-options" value="weight-loss" form="form-control" checked>
+                  <span class="pet-data__control-mark">
+                  </span>
                   <span class="pet-data__program-item name-program">
                     Похудение
                   </span>
@@ -84,7 +86,9 @@
               </li>
               <li class="pet-data__options-item">
                 <label class="pet-data__options-control control">
-                  <input class="pet-data__control-input control-input" type="radio" name="program-options" value="weight-gain" form="form-control">
+                  <input class="pet-data__control-input control-input visually-hidden" type="radio" name="program-options" value="weight-gain" form="form-control">
+                  <span class="pet-data__control-mark">
+                  </span>
                   <span class="pet-data__program-item name-program">
                     Набор массы
                   </span>
@@ -92,7 +96,9 @@
               </li>
               <li class="pet-data__options-item">
                 <label class="pet-data__options-control control">
-                  <input class="pet-data__control-input control-input" type="radio" name="program-options" value="don't-know" form="form-control">
+                  <input class="pet-data__control-input control-input visually-hidden" type="radio" name="program-options" value="don't-know" form="form-control">
+                  <span class="pet-data__control-mark">
+                  </span>
                   <span class="pet-data__program-item name-program">
                     Не знаю (Нужен ваш совет)
                   </span>
@@ -107,11 +113,11 @@
           </h2>
           <div class="contact-details__wrapper">
             <label class="contact-details__control control">
-              E-mail:*
+              <span class="control__name-input">E-mail:*</span>
               <input class="contact-details__control-input contact-details__control-input--email input " type="email" value="kuklachev@gmail.com" form="form-control" required>
             </label>
             <label class="contact-details__control control">
-              Телефон:*
+              <span class="control__name-input">Телефон:*</span>
               <input class="contact-details__control-input contact-details__control-input--phone-number input" type="tel" value="8(960)900-60-90" form="form-control" required>
             </label>
           </div>
@@ -130,7 +136,9 @@
         <ul class="additionally__list">
           <li class="additionally__item">
             <label class="additionally__options-control control">
-              <input class="additionally__control-input control-input" type="checkbox" name="sweetener" checked>
+              <input class="additionally__control-input control-input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="additionally__control-mark">
+              </span>
               <span class="additionally__name-additionally">
                 Сахарозаменитель
               </span>
@@ -138,7 +146,9 @@
           </li>
           <li class="additionally__item">
             <label class="additionally__options-control control">
-              <input class="additionally__control-input control-input" type="checkbox" name="water">
+              <input class="additionally__control-input control-input visually-hidden" type="checkbox" name="water">
+              <span class="additionally__control-mark">
+              </span>
               <span class="additionally__name-additionally">
                 Питьевая вода
               </span>
@@ -146,7 +156,9 @@
           </li>
           <li class="additionally__item">
             <label class="additionally__options-control control">
-              <input class="additionally__control-input control-input" type="checkbox" name="milk">
+              <input class="additionally__control-input control-input visually-hidden" type="checkbox" name="milk">
+              <span class="additionally__control-mark">
+              </span>
               <span class="additionally__name-additionally">
                 Молоко
               </span>
@@ -154,7 +166,9 @@
           </li>
           <li class="additionally__item">
             <label class="additionally__options-control control">
-              <input class="additionally__control-input control-input" type="checkbox" name="vitamins">
+              <input class="additionally__control-input control-input visually-hidden" type="checkbox" name="vitamins">
+              <span class="additionally__control-mark">
+              </span>
               <span class="additionally__name-additionally">
                 Витамины
               </span>

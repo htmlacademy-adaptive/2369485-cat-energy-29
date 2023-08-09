@@ -24,8 +24,12 @@
   text-decoration: none;
   color: $standard-black;
 
-  &--secondary {
-    color: $standard-black;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $table-width) {
@@ -37,6 +41,10 @@
     font-size: 20px;
     padding: 0;
     margin-bottom: 10px;
+
+    &--secondary {
+      color: $standard-black;
+    }
   }
 }
 

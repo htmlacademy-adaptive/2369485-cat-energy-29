@@ -81,3 +81,54 @@
     font-size: 20px;
   }
 }
+
+.additionally__name-additionally {
+  padding-left: 60px;
+}
+
+.additionally__options-control {
+  position: relative;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+    border-color: $silver;
+  }
+}
+
+.additionally__control-mark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $standard-white;
+  border: 1px solid $light-grey;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $silver;
+  }
+
+  @media (min-width: $table-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.control-input[type="checkbox"]:checked + .additionally__control-mark::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/tick-catalog-add.svg");
+  height: 26px;
+  width: 26px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
