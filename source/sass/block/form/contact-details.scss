@@ -24,3 +24,36 @@
     margin-bottom: 20px;
   }
 }
+
+.contact-details__control-input {
+  min-width: 494px;
+  position: relative;
+
+  &--email {
+    background-image: url("../img/icon-email.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+
+    &:focus {
+      background-image: url("../img/icon-email-focus.svg");
+    }
+  }
+
+  &--phone-number {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+
+    &:focus {
+      background-image: url("../img/icon-phone-focus.svg");
+    }
+  }
+}
+
+.contact-details__control-input--email:invalid {
+  background-image: url("../../../img/icon-email-error.svg");
+}
+
+.contact-details__control-input--phone-number:invalid {
+  background-image: url("../img/icon-phone-error.svg");
+}
