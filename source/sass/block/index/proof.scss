@@ -2,10 +2,19 @@
   margin-top: 0;
   margin-bottom: 40px;
   text-align: start;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -220px;
+  }
 }
 
 .proof__description {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .proof__food-costs {
@@ -39,6 +48,32 @@
     transform: translateY(-50%);
     background-color: #666666;
   }
+
+  &--positioning {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-30%) translateY(-50%);
+  }
+
+
+  @media (min-width: $table-width) {
+    left: 50%;
+    top: 20%;
+
+    &::before {
+      height: 512px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 50px;
+
+    &::before {
+      height: 512px;
+    }
+  }
 }
 
 .proof__slider-wrapper {
@@ -46,17 +81,8 @@
   width: 320px;
   left: 50%;
   transform: translateX(-50%);
-}
 
-.proof__button-slider--positioning {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-30%) translateY(-50%);
-}
-
-@media (min-width: $table-width) {
-  .proof__slider-wrapper {
+  @media (min-width: $table-width) {
     position: relative;
     width: 768px;
     height: 462px;
@@ -83,31 +109,7 @@
     }
   }
 
-  .proof__img-slider {
-    display: none;
-  }
-
-  .proof__text-wrapper {
-    margin-bottom: 267px;
-  }
-
-  .proof__button-slider {
-    left: 50%;
-    top: 20%;
-
-    &::before {
-      height: 512px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .proof__text-wrapper {
-    width: 436px;
-    margin-bottom: 0;
-  }
-
-  .proof__slider-wrapper {
+  @media (min-width: $desktop-width) {
     position: relative;
     width: 400px;
     height: 512px;
@@ -133,23 +135,22 @@
       background-image: url("../img/img-slider-1-table.png");
     }
   }
+}
 
-  .proof__title {
-    position: relative;
-    top: -220px;
+@media (min-width: $table-width) {
+  .proof__img-slider {
+    display: none;
   }
 
-  .proof__button-slider {
-    position: relative;
-    top: 50px;
-
-    &::before {
-      height: 512px;
-    }
+  .proof__text-wrapper {
+    margin-bottom: 267px;
   }
+}
 
-  .proof__description {
-    margin-bottom: 69px;
+@media (min-width: $desktop-width) {
+  .proof__text-wrapper {
+    width: 436px;
+    margin-bottom: 0;
   }
 
   .proof__indicators-wrappper {

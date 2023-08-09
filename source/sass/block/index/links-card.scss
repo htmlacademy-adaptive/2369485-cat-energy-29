@@ -5,10 +5,8 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-@media (min-width: $table-width) {
-  .links-card {
+  @media (min-width: $table-width) {
     font-size: 20px;
     line-height: normal;
   }

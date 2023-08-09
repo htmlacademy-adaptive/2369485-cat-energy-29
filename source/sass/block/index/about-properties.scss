@@ -7,10 +7,30 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    row-gap: 37px;
+    column-gap: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: none;
+    row-gap: 0;
+    column-gap: 0;
+  }
 }
 
 .about-properties__item {
   margin-top: 26px;
+
+  @media (min-width: $desktop-width) {
+    padding: 160px 26px 61px 0;
+    width: 224px;
+  }
 }
 
 .about-properties__card-description {
@@ -40,6 +60,26 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-left: 0;
+    margin: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: -69px;
+    }
+
+    &::after {
+      width: 30px;
+      height: 30px;
+      left: 25px;
+      top: -69px;
+    }
+  }
 }
 
 .about-properties__card-description--substances {
@@ -63,49 +103,5 @@
 .about-properties__card-description--changes {
   &::after {
     background-image: url("../img/card-about-time.svg");
-  }
-}
-
-@media (min-width: $table-width) {
-  .about-properties__list {
-    display: grid;
-    grid-template-columns: 230px 230px;
-    row-gap: 37px;
-    column-gap: 152px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .about-properties__list {
-    display: flex;
-    justify-content: space-between;
-    grid-template-columns: none;
-    row-gap: 0;
-    column-gap: 0;
-  }
-
-  .about-properties__item {
-    padding: 160px 26px 61px 0;
-    width: 224px;
-  }
-
-  .about-properties__card-description {
-    position: relative;
-    padding-left: 0;
-    margin: 0;
-
-    &::before {
-      width: 80px;
-      height: 80px;
-      left: 0;
-      top: -69px;
-    }
-
-    &::after {
-      width: 30px;
-      height: 30px;
-      left: 25px;
-      top: -69px;
-    }
   }
 }

@@ -6,22 +6,74 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $table-width) {
+    position: relative;
+    padding: 77px 0  57px 54px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 0;
+    margin-right: 80px;
+    min-width: 570px;
+    min-height: 374px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .nutrition-program__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .nutrition-program__card-title {
   margin-top: 0;
   text-align: center;
   margin-bottom: 29px;
+
+  @media (min-width: $table-width) {
+    text-align: start;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-left: 22px;
+    margin-top: 78px;
+    margin-bottom: 72px;
+  }
 }
 
 .nutrition-program__card-description {
   margin-bottom: 38px;
+
+  @media (min-width: $table-width) {
+    color: $standard-black;
+    margin-bottom: 52px;
+    max-width: 339px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 53px;
+    max-width: 457px;
+    margin-bottom: 27px;
+  }
 }
 
 .nutrition-program__card-link {
@@ -40,19 +92,23 @@
     background-image: url("../img/arrow-right.svg");
     background-repeat: no-repeat;
   }
-}
 
-@media (min-width: $table-width) {
-  .nutrition-program__item {
-    position: relative;
-    padding: 77px 0  57px 54px;
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 0;
+  @media (min-width: $table-width) {
+    &::after {
+      right: -9px;
     }
   }
 
+  @media (min-width: $desktop-width) {
+    margin-left: 52px;
+
+    &::after {
+      right: -11px;
+    }
+  }
+}
+
+@media (min-width: $table-width) {
   .nutrition-program__item--slim,
   .nutrition-program__item--pro {
     &::before {
@@ -98,65 +154,9 @@
       background-repeat: no-repeat;
     }
   }
-
-  .nutrition-program__card-title {
-    text-align: start;
-    margin-bottom: 24px;
-  }
-
-  .nutrition-program__card-description {
-    color: $standard-black;
-    margin-bottom: 52px;
-    max-width: 339px;
-  }
-
-  .nutrition-program__card-link {
-    &::after {
-      right: -9px;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .nutrition-program__list {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .nutrition-program__item {
-    position: relative;
-    padding: 0;
-    margin-right: 80px;
-    min-width: 570px;
-    min-height: 374px;
-    margin-bottom: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .nutrition-program__card-title {
-    text-align: center;
-    margin-left: 22px;
-    margin-top: 78px;
-    margin-bottom: 72px;
-  }
-
-  .nutrition-program__card-description {
-    margin-left: 53px;
-    max-width: 457px;
-    margin-bottom: 27px;
-  }
-
-  .nutrition-program__card-link {
-    margin-left: 52px;
-
-    &::after {
-      right: -11px;
-    }
-  }
-
   .nutrition-program__card-title--pro {
     margin-left: 63px;
   }
