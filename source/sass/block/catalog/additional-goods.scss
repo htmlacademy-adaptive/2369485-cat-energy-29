@@ -1,14 +1,72 @@
 .additional-goods__title {
+  position: relative;
   margin-top: 0;
   margin-bottom: 49px;
+  text-transform: capitalize;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 54px;
+    height: 2px;
+    top: 58%;
+    transform: translateY(-50%);
+    right: -20px;
+    background-color: $base-color;
+  }
 
   @media (min-width: $table-width) {
     margin-left: 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      top: 58%;
+      transform: translateY(-50%);
+      left: -70px;
+      background-color: $base-color;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 2px;
+      top: 58%;
+      transform: translateY(-50%);
+      right: -30px;
+      background-color: $base-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-bottom: 82px;
+    margin-bottom: 96px;
+    text-transform: inherit;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 70px;
+      height: 2px;
+      top: 65%;
+      transform: translateY(-50%);
+      left: -110px;
+      background-color: $base-color;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 952px;
+      height: 2px;
+      top: 65%;
+      transform: translateY(-50%);
+      right: -110px;
+      background-color: $base-color;
+    }
   }
 }
 
@@ -29,6 +87,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    top: 1px;
     width: 895px;
   }
 }
@@ -54,6 +113,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 34px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      top: -18px;
+    }
   }
 }
 
@@ -85,6 +153,9 @@
   text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
     margin-bottom: 0;
   }
 }
@@ -93,8 +164,9 @@
   display: block;
 
   @media (min-width: $desktop-width) {
+    position: relative;
     min-width: 244px;
-    padding: 7px 26px;
+    padding: 9px 26px;
     display: inline-block;
     box-sizing: border-box;
   }

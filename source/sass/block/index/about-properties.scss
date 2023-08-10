@@ -1,6 +1,10 @@
 .about-properties__title {
   margin-top: 0;
   text-align: start;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -5px;
+  }
 }
 
 .about-properties__list {

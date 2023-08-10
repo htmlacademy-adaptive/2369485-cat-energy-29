@@ -13,10 +13,6 @@
   text-transform: uppercase;
   border: none;
 
-  &:hover {
-    background-color: $button-hover;
-  }
-
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
@@ -26,10 +22,6 @@
     background-color: $card-color;
     padding: 10px 0;
 
-    &:hover {
-      background-color: #ebebeb;
-    }
-
     &:active {
       color: $charcoal-color;
       opacity: 0.3;
@@ -37,12 +29,74 @@
   }
 
   @media (min-width: $table-width) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
+
+    &:hover {
+      background-color: $button-hover;
+    }
+
+    &:focus {
+      outline: 2px solid $standard-black;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &--secondary {
+      color: $charcoal-color;
+      background-color: $card-color;
+      padding: 10px 0;
+
+      &:hover {
+        background-color: #ebebeb;
+      }
+
+      &:focus {
+        outline: 2px solid $standard-black;
+      }
+
+      &:active {
+        color: $charcoal-color;
+        opacity: 0.3;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
+
+    &:hover {
+      background-color: $button-hover;
+    }
+
+    &:focus {
+      outline: 2px solid $standard-black;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &--secondary {
+      color: $charcoal-color;
+      background-color: $card-color;
+      padding: 10px 0;
+
+      &:hover {
+        background-color: #ebebeb;
+      }
+
+      &:focus {
+        outline: 2px solid $standard-black;
+      }
+
+      &:active {
+        color: $charcoal-color;
+        opacity: 0.3;
+      }
+    }
   }
 }

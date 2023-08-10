@@ -1,5 +1,7 @@
 .social__list {
   position: relative;
+  top: 2px;
+  left: 17px;
   display: flex;
   justify-content: center;
   margin: 0;
@@ -23,12 +25,32 @@
       position: static;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+    flex-wrap: wrap;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .social__item {
-  margin-right: 24px;
+  margin-right: 27px;
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.social__link {
+  &:hover path,
+  &:focus path {
+    fill: $base-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -29,7 +29,15 @@
   background-color: transparent;
   padding: 0;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $table-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

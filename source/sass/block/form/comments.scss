@@ -1,14 +1,70 @@
 .comments__title {
+  position: relative;
   text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 38px;
 
+  &::before {
+    position: absolute;
+    content: "";
+    width: 159px;
+    height: 2px;
+    top: 58%;
+    transform: translateY(-50%);
+    right: -20px;
+    background-color: $base-color;
+  }
+
   @media (min-width: $table-width) {
     margin-bottom: 87px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      top: 58%;
+      transform: translateY(-50%);
+      left: -70px;
+      background-color: $base-color;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 476px;
+      height: 2px;
+      top: 58%;
+      transform: translateY(-50%);
+      right: -70px;
+      background-color: $base-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 76px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 70px;
+      height: 2px;
+      top: 65%;
+      transform: translateY(-50%);
+      left: -110px;
+      background-color: $base-color;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1108px;
+      height: 2px;
+      top: 65%;
+      transform: translateY(-50%);
+      right: -110px;
+      background-color: $base-color;
+    }
   }
 }
 
@@ -35,7 +91,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1214px;
-    height: 168px;
+    width: 1220px;
+    height: 174px;
+    padding: 11px 20px;
+    box-sizing: border-box;
   }
 }

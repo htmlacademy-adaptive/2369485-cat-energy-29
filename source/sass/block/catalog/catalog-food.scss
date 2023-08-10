@@ -10,6 +10,10 @@
     margin-bottom: 163px;
     text-align: start;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
 }
 
 .catalog-food__list {
@@ -44,7 +48,7 @@
     width: 320px;
     transform: translateX(-50%);
     height: 1px;
-    background-color: $gainsboro-color;
+    background-color: $decoration-color;
   }
 
   &:last-child {
@@ -94,8 +98,8 @@
     position: relative;
     margin-bottom: 0;
     min-height: 431px;
-    padding-top: 162px;
-    padding-left: 36px;
+    padding-top: 165px;
+    padding-left: 40px;
     padding-right: 36px;
     box-sizing: border-box;
     background-color: $card-color;
@@ -134,7 +138,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
     text-align: center;
   }
 }
@@ -142,6 +146,12 @@
 .catalog-food__order-button {
   display: block;
   padding: 10px 0;
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .catalog-food__item-wrapper {
@@ -173,7 +183,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 11px;
     width: 100%;
   }
 }
@@ -228,7 +238,7 @@
 
   @media (min-width: $desktop-width) {
     width: 165px;
-    margin-bottom: 15.68px;
+    margin-bottom: 16px;
 
     &:last-child {
       margin-bottom: 0;
@@ -351,8 +361,8 @@
 @media (min-width: $desktop-width) {
   .catalog-foot__order-link--first-change {
     &::before {
-      left: 15px;
-      top: -300px;
+      left: 4px;
+      top: -293px;
       width: 161px;
       height: 172px;
     }
@@ -360,8 +370,8 @@
 
   .catalog-foot__order-link--second-change {
     &::before {
-      left: 5px;
-      top: -310px;
+      left: 0;
+      top: -320px;
       width: 172px;
       height: 196px;
       background-image: url("../img/catalog/card-img-desctop-2.jpg");
@@ -370,8 +380,8 @@
 
   .catalog-foot__order-link--third-change {
     &::before {
-      left: 15px;
-      top: -300px;
+      left: 4px;
+      top: -294px;
       width: 161px;
       height: 172px;
     }
@@ -379,8 +389,8 @@
 
   .catalog-foot__order-link--fourth-change {
     &::before {
-      left: 5px;
-      top: -310px;
+      left: 0;
+      top: -320px;
       width: 172px;
       height: 196px;
       background-image: url("../img/catalog/card-img-desctop-4.jpg");
@@ -389,8 +399,8 @@
 
   .catalog-foot__order-link--fifth-change {
     &::before {
-      left: 15px;
-      top: -300px;
+      left: 4px;
+      top: -293px;
       width: 161px;
       height: 172px;
     }
@@ -398,8 +408,8 @@
 
   .catalog-foot__order-link--sixth-change {
     &::before {
-      left: 5px;
-      top: -310px;
+      left: 0;
+      top: -320px;
       width: 172px;
       height: 196px;
       background-image: url("../img/catalog/card-img-desctop-6.jpg");
@@ -408,8 +418,8 @@
 
   .catalog-foot__order-link--seventh-change {
     &::before {
-      left: 15px;
-      top: -300px;
+      left: 4px;
+      top: -294px;
       width: 161px;
       height: 172px;
     }

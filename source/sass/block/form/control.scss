@@ -14,3 +14,17 @@
   }
 }
 
+.control__name-input {
+  position: relative;
+  margin-right: 9px;
+
+  @media (min-width: $table-width) {
+    margin-right: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 4px;
+    margin-right: 10px;
+  }
+}
+

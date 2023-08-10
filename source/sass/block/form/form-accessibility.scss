@@ -13,5 +13,22 @@
 }
 
 .form-accessibility__name-input {
-  margin-right: 13px;
+  position: relative;
+  margin-right: 9px;
+
+  @media (min-width: $table-width) {
+    margin-right: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 8px;
+
+    &--weight {
+      top: 6px;
+    }
+
+    &--age {
+      top: 12px;
+    }
+  }
 }

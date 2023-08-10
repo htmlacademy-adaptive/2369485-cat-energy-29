@@ -29,13 +29,23 @@
 }
 
 .location__company-address {
+  color: $charcoal-color;
   font-family: "Lato", sans-serif;
   font-style: normal;
+  font-size: 14px;
   line-height: 20px;
-  width: 140px;
+  width: 163px;
 
   @media (min-width: $table-width) {
+    font-size: 16px;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    left: 7px;
+    text-align: start;
+    font-size: 16px;
   }
 }
 
