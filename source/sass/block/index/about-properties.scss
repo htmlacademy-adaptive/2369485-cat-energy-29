@@ -2,6 +2,10 @@
   margin-top: 0;
   text-align: start;
 
+  @media (min-width: $table-width) {
+    margin-bottom: 183px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: -5px;
   }
@@ -15,8 +19,8 @@
   @media (min-width: $table-width) {
     display: grid;
     grid-template-columns: 230px 230px;
-    row-gap: 37px;
-    column-gap: 152px;
+    row-gap: 245px;
+    column-gap: 178px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,11 +33,48 @@
 }
 
 .about-properties__item {
+  position: relative;
   margin-top: 26px;
+
+  @media (min-width: $table-width) {
+    margin-top: 0;
+
+    &::before {
+      position: absolute;
+      content: attr(data-number);
+      top: -145px;
+      left: 30px;
+      width: 280px;
+      height: 280px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 280px;
+      color: $card-color;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     padding: 160px 26px 61px 0;
     width: 224px;
+
+    &::before {
+      position: absolute;
+      content: attr(data-number);
+      top: 10px;
+      left: 30px;
+      width: 280px;
+      height: 280px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 280px;
+      color: $card-color;
+    }
   }
 }
 
@@ -65,10 +106,26 @@
     background-position: center;
   }
 
-  @media (min-width: $desktop-width) {
-    position: relative;
+  @media (min-width: $table-width) {
     padding-left: 0;
-    margin: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: -69px;
+    }
+
+    &::after {
+      width: 30px;
+      height: 30px;
+      left: 25px;
+      top: -69px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
 
     &::before {
       width: 80px;
