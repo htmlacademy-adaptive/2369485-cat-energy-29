@@ -102,6 +102,10 @@
   @media (min-width: $desktop-width) {
     max-width: 1224px;
     margin-bottom: 203px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
