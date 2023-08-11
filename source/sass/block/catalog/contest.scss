@@ -43,7 +43,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    top: -26px;
+    top: -16px;
     width: 245px;
     height: 289px;
     padding: 186px 43px 42px 43px;
@@ -83,7 +83,7 @@
 
   @media (min-width: $table-width) {
     &::before {
-      top: 30px;
+      top: 40px;
       left: 124px;
     }
   }
