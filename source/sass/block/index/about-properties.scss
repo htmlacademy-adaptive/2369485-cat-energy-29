@@ -25,6 +25,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     grid-template-columns: none;
     row-gap: 0;
@@ -41,7 +42,8 @@
 
     &::before {
       position: absolute;
-      content: attr(data-number);
+      counter-increment: item;
+      content: "" counter(item);
       top: -145px;
       left: 30px;
       width: 280px;
@@ -62,7 +64,8 @@
 
     &::before {
       position: absolute;
-      content: attr(data-number);
+      counter-increment: item;
+      content: "" counter(item);
       top: 10px;
       left: 30px;
       width: 280px;

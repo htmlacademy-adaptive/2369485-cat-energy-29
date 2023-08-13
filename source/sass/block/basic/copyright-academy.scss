@@ -5,14 +5,33 @@
   line-height: 20px;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &--state {
-    &:hover path,
-    &:focus path {
-      fill: $base-color;
+    @media (min-width: $table-width) {
+      &:hover path,
+      &:focus path {
+        fill: $base-color;
+      }
+
+      &:hover,
+      &:focus {
+        color: $base-color;
+      }
     }
 
-    &:active {
-      opacity: 0.3;
+    @media (min-width: $desktop-width) {
+      &:hover path,
+      &:focus path {
+        fill: $base-color;
+      }
+
+      &:hover,
+      &:focus {
+        color: $base-color;
+      }
     }
   }
 }
