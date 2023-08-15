@@ -1,17 +1,11 @@
 .container {
   padding: 0 20px;
-}
 
-@media (min-width: $table-width) {
-  .container {
+  @media (min-width: $table-width) {
     padding: 0 30px;
-    margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .container {
+  @media (min-width: $desktop-width) {
     padding: 0 110px;
-    margin: 0 auto;
   }
 }

@@ -4,16 +4,33 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-}
+  border-radius: 0;
+  border: none;
+  outline: 1px solid $whisper;
 
-@media (min-width: $table-width) {
-  .input {
+  &:hover {
+    outline-color: $light-grey;
+  }
+
+  &:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: $charcoal-color;
+    border-radius: 0;
+  }
+
+  &:invalid {
+    outline: 2px solid $light-coral;
+  }
+
+  @media (min-width: $table-width) {
     font-size: 20px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .input {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
+    padding: 11px 20px;
+    padding-right: 34px;
+    box-sizing: border-box;
   }
 }

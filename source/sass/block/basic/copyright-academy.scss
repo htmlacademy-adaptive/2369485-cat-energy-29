@@ -4,4 +4,34 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--state {
+    @media (min-width: $table-width) {
+      &:hover path,
+      &:focus path {
+        fill: $base-color;
+      }
+
+      &:hover,
+      &:focus {
+        color: $base-color;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &:hover path,
+      &:focus path {
+        fill: $base-color;
+      }
+
+      &:hover,
+      &:focus {
+        color: $base-color;
+      }
+    }
+  }
 }

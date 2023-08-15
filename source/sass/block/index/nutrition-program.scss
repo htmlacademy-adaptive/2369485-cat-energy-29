@@ -1,10 +1,80 @@
 .nutrition-program__item {
+  position: relative;
   background-color: $card-color;
   margin-bottom: 20px;
-  padding: 30px 20px 18px 20px;
+  padding: 30px 33px 18px 20px;
+  min-height: 266px;
+  box-sizing: border-box;
+
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--slim,
+  &--pro {
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: 2;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 50px;
+      top: 27px;
+      left: 20px;
+      background-color: $base-color;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+  &--slim {
+    &::before {
+      top: 25px;
+      left: 26px;
+      width: 36px;
+      height: 50px;
+      background-image: url("../img/cat-slim-mobile.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--pro {
+    &::before {
+      top: 37px;
+      left: 13px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../img/tigar-pro-mobile.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $table-width) {
+    position: relative;
+    padding: 77px 0  57px 54px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 78px 61px 59px 51px;
+    margin-right: 80px;
+    min-width: 570px;
+    min-height: 374px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -12,22 +82,79 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .nutrition-program__card-title {
   margin-top: 0;
   text-align: center;
   margin-bottom: 29px;
+
+  &--pro {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $table-width) {
+    text-align: start;
+    margin-bottom: 24px;
+
+    &--pro {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 73px;
+
+    &--pro {
+      margin-left: 75px;
+    }
+  }
 }
 
 .nutrition-program__card-description {
   margin-bottom: 38px;
+
+  @media (min-width: $table-width) {
+    color: $standard-black;
+    margin-bottom: 52px;
+    max-width: 339px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $standard-black;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 457px;
+    margin-bottom: 27px;
+    word-spacing: 1px;
+  }
 }
 
 .nutrition-program__card-link {
   position: relative;
   padding: 4px 0;
   padding-right: 47px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    width: 240px;
+    height: 1px;
+    background-color: $gainsboro-color;
+  }
 
   &::after {
     position: absolute;
@@ -40,19 +167,53 @@
     background-image: url("../img/arrow-right.svg");
     background-repeat: no-repeat;
   }
-}
 
-@media (min-width: $table-width) {
-  .nutrition-program__item {
-    position: relative;
-    padding: 77px 0  57px 54px;
-    margin-bottom: 30px;
+  @media (min-width: $table-width) {
+    &:hover {
+      &::after {
+        background-image: url("../img/arrow-right-hover.svg");
+      }
+    }
 
-    &:last-child {
-      margin-bottom: 0;
+    &:focus {
+      outline: $focus;
+    }
+
+    &::after {
+      right: -9px;
+    }
+
+    &::before {
+      display: none;
     }
   }
 
+  @media (min-width: $desktop-width) {
+    &:hover {
+      &::after {
+        background-image: url("../img/arrow-right-hover.svg");
+      }
+    }
+
+    &:focus {
+      outline: $focus;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &::after {
+      right: -11px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $table-width) {
   .nutrition-program__item--slim,
   .nutrition-program__item--pro {
     &::before {
@@ -67,8 +228,8 @@
       width: 200px;
       height: 200px;
       top: 50%;
-      transform: translateY(-47%);
-      right: 61px;
+      left: 447px;
+      transform: translateY(-56.4%);
       background-color: $base-color;
       border-radius: 50%;
       z-index: 1;
@@ -78,8 +239,8 @@
   .nutrition-program__item--slim {
     &::before {
       top: 50%;
-      right: 91px;
-      transform: translateY(-54%);
+      left: 477px;
+      transform: translateY(-64%);
       width: 140px;
       height: 194px;
       background-image: url("../img/cat-slim-table.svg");
@@ -90,77 +251,17 @@
   .nutrition-program__item--pro {
     &::before {
       top: 50%;
-      right: 29px;
-      transform: translateY(-46%);
+      left: 414px;
+      transform: translateY(-63%);
       width: 268px;
       height: 112px;
       background-image: url("../img/tigar-pro-table.svg");
       background-repeat: no-repeat;
     }
   }
-
-  .nutrition-program__card-title {
-    text-align: start;
-    margin-bottom: 24px;
-  }
-
-  .nutrition-program__card-description {
-    color: $standard-black;
-    margin-bottom: 52px;
-    max-width: 339px;
-  }
-
-  .nutrition-program__card-link {
-    &::after {
-      right: -9px;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .nutrition-program__list {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .nutrition-program__item {
-    position: relative;
-    padding: 0;
-    margin-right: 80px;
-    min-width: 570px;
-    min-height: 374px;
-    margin-bottom: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .nutrition-program__card-title {
-    text-align: center;
-    margin-left: 22px;
-    margin-top: 78px;
-    margin-bottom: 72px;
-  }
-
-  .nutrition-program__card-description {
-    margin-left: 53px;
-    max-width: 457px;
-    margin-bottom: 27px;
-  }
-
-  .nutrition-program__card-link {
-    margin-left: 52px;
-
-    &::after {
-      right: -11px;
-    }
-  }
-
-  .nutrition-program__card-title--pro {
-    margin-left: 63px;
-  }
-
   .nutrition-program__item--slim,
   .nutrition-program__item--pro {
     &::before {

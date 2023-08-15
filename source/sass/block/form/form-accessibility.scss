@@ -2,16 +2,33 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-}
 
-@media (min-width: $table-width) {
-  .form-accessibility {
+  @media (min-width: $table-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 20px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form-accessibility {
-    font-size: 20px;
+.form-accessibility__name-input {
+  position: relative;
+  margin-right: 9px;
+
+  @media (min-width: $table-width) {
+    margin-right: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 8px;
+
+    &--weight {
+      top: 6px;
+    }
+
+    &--age {
+      top: 12px;
+    }
   }
 }

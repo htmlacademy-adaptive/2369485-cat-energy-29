@@ -4,19 +4,14 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
-}
 
-@media (min-width: $table-width) {
-  .subtitle {
+  @media (min-width: $table-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .subtitle {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-

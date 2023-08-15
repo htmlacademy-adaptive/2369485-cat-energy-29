@@ -7,6 +7,35 @@
   padding-top: 40px;
   margin-bottom: 40px;
   text-align: center;
+
+  &:active path {
+    fill: #6b6b6b;
+  }
+
+  @media (min-width: $table-width) {
+    padding-top: 0;
+    margin-bottom: 0;
+
+    &:hover path,
+    &:focus path {
+      fill: #3e3e3e;
+    }
+
+    &:active path {
+      fill: #6b6b6b;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover path,
+    &:focus path {
+      fill: #3e3e3e;
+    }
+
+    &:active path {
+      fill: #6b6b6b;
+    }
+  }
 }
 
 .main-footer__logo-wrapper {
@@ -20,32 +49,39 @@
     height: 1px;
     background-color: $gainsboro-color;
   }
+
+  @media (min-width: $table-width) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .main-footer__link-wrapper--copyright {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 280px;
   margin: 0 auto;
-}
 
-@media (min-width: $table-width) {
-  .main-footer__logo-wrapper {
-    &::after {
-      display: none;
-    }
-  }
-
-  .main-footer__link-wrapper--copyright {
+  @media (min-width: $table-width) {
     display: grid;
     grid-template-columns: 113px 27px;
     width: 168px;
     margin: 0;
   }
 
-  .main-footer__logo {
-    padding-top: 0;
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 113px 27px;
+  }
+}
+
+.main-footer__copyright {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    left: 5px;
   }
 }

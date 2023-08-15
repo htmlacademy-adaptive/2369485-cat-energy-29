@@ -4,16 +4,26 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-}
 
-@media (min-width: $table-width) {
-  .control {
+  @media (min-width: $table-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 20px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .control {
-    font-size: 20px;
+.control__name-input {
+  position: relative;
+  margin-right: 9px;
+
+  @media (min-width: $table-width) {
+    margin-right: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 4px;
+    margin-right: 10px;
   }
 }

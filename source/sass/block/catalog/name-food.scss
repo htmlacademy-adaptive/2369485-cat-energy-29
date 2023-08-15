@@ -4,18 +4,14 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-}
 
-@media (min-width: $table-width) {
-  .name-food {
+  @media (min-width: $table-width) {
     color: $nero-color;
     font-size: 20px;
     line-height: 24px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .name-food {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 21px;
   }

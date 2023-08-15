@@ -23,6 +23,38 @@
     background-position: center;
     z-index: -2;
   }
+
+  @media (min-width: $table-width) {
+    &::after,
+    &::before {
+      position: static;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 720px;
+      min-height: 694px;
+      top: -115px;
+      left: 610px;
+    }
+
+    &::after {
+      background-color: $apple-color;
+      z-index: -1;
+    }
+
+    &::before {
+      background-image: url("../img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+    }
+  }
 }
 
 .hero__title {
@@ -31,6 +63,23 @@
   margin-top: 0;
   margin-bottom: 25px;
   width: 249px;
+
+  @media (min-width: $table-width) {
+    color: $standard-black;
+    text-align: start;
+    margin-top: -14px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 414px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 414px;
+    text-align: start;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
 }
 
 .hero__images {
@@ -38,6 +87,14 @@
   left: 50%;
   transform: translateX(-50%);
   top: 28px;
+
+  @media (min-width: $table-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .hero__description {
@@ -47,6 +104,22 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
+
+  @media (min-width: $table-width) {
+    color: $standard-black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 346px;
+    text-align: start;
+    margin-bottom: 53px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .hero__interective-wrapper {
@@ -57,6 +130,16 @@
   background-color: transparent;
   max-width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+    margin-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    margin-left: 0;
+  }
 }
 
 .hero__guide-button {
@@ -69,33 +152,28 @@
   color: $standard-white;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $table-width) {
+    position: static;
+    display: inline-block;
+    margin: 0;
+    padding: 16px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    display: inline-block;
+    margin: 0;
+    padding: 16px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $table-width) {
-  .hero {
-    &::after,
-    &::before {
-      position: static;
-    }
-  }
-
-  .hero__title {
-    color: $standard-black;
-    text-align: start;
-    margin-bottom: 40px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 414px;
-  }
-
-  .hero__description {
-    color: $standard-black;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: start;
-    margin-bottom: 51px;
-  }
-
   .hero__text-wrapper {
     width: 414px;
     margin-top: 65px;
@@ -119,24 +197,6 @@
       background-size: cover;
     }
   }
-
-  .hero__interective-wrapper {
-    margin: 0;
-    margin-left: 120px;
-  }
-
-  .hero__images {
-    display: none;
-  }
-
-  .hero__guide-button {
-    position: static;
-    display: inline-block;
-    margin: 0;
-    padding: 16px 26px;
-    font-size: 20px;
-    line-height: 20px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -149,7 +209,7 @@
       width: 552px;
       height: 492px;
       top: -315px;
-      left: 53.2%;
+      left: 56.5%;
       background-image: url("../img/hero-images-desctop.png");
       background-repeat: no-repeat;
       background-position: top;
@@ -157,67 +217,9 @@
     }
   }
 
-  .hero__images {
-    display: none;
-  }
-
-  .hero__interective-wrapper {
-    position: static;
-  }
-
   .hero__text-wrapper {
     width: 414px;
     margin-top: 0;
     margin-left: 0;
-  }
-
-  .hero__title {
-    max-width: 414px;
-    text-align: start;
-    margin-bottom: 40px;
-    margin-top: 10px;
-  }
-
-  .hero__description {
-    max-width: 346px;
-    text-align: start;
-    margin-bottom: 53px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .hero__guide-button {
-    position: static;
-    display: inline-block;
-    margin: 0;
-    padding: 16px 26px;
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 265px;
-  }
-
-  .hero {
-    &::after,
-    &::before {
-      position: absolute;
-      content: "";
-      width: 720px;
-      min-height: 694px;
-      top: -115px;
-      left: 685px;
-    }
-
-    &::after {
-      background-color: $apple-color;
-      z-index: -1;
-    }
-
-    &::before {
-      background-image: url("../img/index-background-desktop.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      z-index: -2;
-    }
   }
 }

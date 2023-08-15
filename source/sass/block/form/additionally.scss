@@ -1,7 +1,72 @@
 .additionally__title {
+  position: relative;
   margin-top: 0;
   text-transform: capitalize;
   margin-bottom: 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 139px;
+    height: 2px;
+    top: 58%;
+    transform: translateY(-50%);
+    right: -20px;
+    background-color: $base-color;
+  }
+
+  @media (min-width: $table-width) {
+    margin-bottom: 57px;
+
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      top: 58%;
+      transform: translateY(-50%);
+      left: -70px;
+      background-color: $base-color;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 446px;
+      height: 2px;
+      top: 58%;
+      transform: translateY(-50%);
+      right: -70px;
+      background-color: $base-color;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 70px;
+      height: 2px;
+      top: 63%;
+      transform: translateY(-50%);
+      left: -110px;
+      background-color: $base-color;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1078px;
+      height: 2px;
+      top: 66%;
+      transform: translateY(-50%);
+      right: -110px;
+      background-color: $base-color;
+    }
+  }
 }
 
 .additionally__list {
@@ -9,13 +74,45 @@
   padding: 0;
   list-style-type: none;
   margin-bottom: 41px;
+
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 221px 221px;
+    column-gap: 123px;
+    row-gap: 32px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    row-gap: 0;
+    column-gap: 0;
+    margin-bottom: 47px;
+  }
 }
 
 .additionally__item {
-  margin-bottom: 13px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 104px;
+
+    &:nth-child(2) {
+      margin-right: 137px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 198px;
+    }
+
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -26,6 +123,19 @@
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 16px;
+
+  @media (min-width: $table-width) {
+    display: inline;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -4px;
+    left: -1px;
+    display: inline;
+    font-size: 16px;
+  }
 }
 
 .additionally__submit-form {
@@ -34,22 +144,8 @@
   margin-bottom: 21px;
   width: 100%;
   padding: 7px 44px;
-}
 
-@media (min-width: $table-width) {
-  .additionally__title {
-    margin-bottom: 57px;
-  }
-
-  .additionally__list {
-    display: grid;
-    grid-template-columns: 221px 221px;
-    column-gap: 123px;
-    row-gap: 32px;
-    margin-bottom: 54px;
-  }
-
-  .additionally__submit-form {
+  @media (min-width: $table-width) {
     display: inline-block;
     margin: 0;
     width: 282px;
@@ -57,31 +153,61 @@
     margin-right: 64px;
   }
 
-  .additionally__must-completed {
-    display: inline;
-    font-size: 16px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .additionally__list {
-    display: flex;
-    row-gap: 0;
-    column-gap: 0;
-  }
-
-  .additionally__item {
-    margin-right: 104px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .additionally__submit-form {
+  @media (min-width: $desktop-width) {
     padding: 16px 0;
     min-width: 570px;
     margin-right: 80px;
     font-size: 20px;
   }
+}
+
+.additionally__name-additionally {
+  padding-left: 60px;
+}
+
+.additionally__options-control {
+  position: relative;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+    border-color: $silver;
+  }
+}
+
+.additionally__control-mark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $standard-white;
+  border: 1px solid $light-grey;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $silver;
+  }
+
+  @media (min-width: $table-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.control-input[type="checkbox"]:checked + .additionally__control-mark::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/tick-catalog-add.svg");
+  height: 26px;
+  width: 26px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

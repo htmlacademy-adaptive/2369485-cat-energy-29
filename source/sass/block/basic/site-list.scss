@@ -4,12 +4,68 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $table-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .site-list__link {
   display: block;
   text-decoration: none;
   color: $standard-black;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $table-width) {
+    padding: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline: $focus;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $standard-white;
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline: $focus;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--secondary {
+      color: $standard-black;
+    }
+  }
 }
 
 .site-list--hidden {
@@ -32,10 +88,8 @@
     height: 1px;
     background-color: $gainsboro-color;
   }
-}
 
-@media (min-width: $table-width) {
-  .site-list__item {
+  @media (min-width: $table-width) {
     margin-right: 34px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -49,18 +103,12 @@
     }
   }
 
-  .site-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 440px;
-    font-size: 18px;
-    line-height: 24px;
+  @media (min-width: $desktop-width) {
+    margin-right: 35px;
   }
+}
 
-  .site-list__link {
-    padding: 0;
-  }
-
+@media (min-width: $table-width) {
   .site-list__link-current {
     text-decoration: underline;
     text-decoration-color: $base-color;
@@ -77,26 +125,6 @@
     text-underline-position: under;
     text-decoration-thickness: 2px;
     text-underline-offset: 8px;
-  }
-
-  .site-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .site-list__link {
-    color: $standard-white;
-    font-size: 20px;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-
-  .site-list__item {
-    margin-right: 35px;
-  }
-
-  .site-list__link--secondary {
-    color: $standard-black;
   }
 
   .site-list__link-current--secondary {
