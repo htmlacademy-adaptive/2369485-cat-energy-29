@@ -17,11 +17,15 @@
   }
 
   &::before {
-    background-image: url("../img/hero-background.jpg");
+    background-image: url("../img/hero-images/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-images/hero-background@2x.jpg");
+    }
   }
 
   @media (min-width: $table-width) {
@@ -48,11 +52,15 @@
     }
 
     &::before {
-      background-image: url("../img/index-background-desktop.jpg");
+      background-image: url("../img/hero-images/index-background-desktop.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       z-index: -2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-images/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
