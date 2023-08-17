@@ -83,17 +83,20 @@
 }
 
 .hero__images {
+  display: block;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   top: 28px;
 
   @media (min-width: $table-width) {
-    display: none;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -122,36 +125,18 @@
   }
 }
 
-.hero__interective-wrapper {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 200px;
-  background-color: transparent;
-  max-width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $table-width) {
-    margin: 0;
-    margin-left: 120px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
-    margin-left: 0;
-  }
-}
-
 .hero__guide-button {
   position: relative;
-  display: block;
+  min-width: 280px;
   top: 48px;
-  margin: 0 20px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 7px 44px;
   text-decoration: none;
   color: $standard-white;
   font-size: 14px;
   line-height: 18px;
+  box-sizing: border-box;
 
   @media (min-width: $table-width) {
     position: static;
@@ -179,44 +164,9 @@
     margin-top: 65px;
     margin-left: 90px;
   }
-
-  .hero__images-wrapper {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 709px;
-      height: 609px;
-      top: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-image: url("../img/hero-images-tablet.png");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .hero__images-wrapper {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 552px;
-      height: 492px;
-      top: -315px;
-      left: 56.5%;
-      background-image: url("../img/hero-images-desctop.png");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-    }
-  }
-
   .hero__text-wrapper {
     width: 414px;
     margin-top: 0;
