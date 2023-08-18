@@ -24,10 +24,15 @@
   }
 
   &::after {
-    background-image: url("../img/contest-bg.png");
+    background-image: url("../img/contest-images/contest-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/contest-images/contest-bg@2x.png");
+      background-size: 280px auto;
+    }
   }
 
   @media (min-width: $table-width) {
@@ -37,7 +42,12 @@
     box-sizing: border-box;
 
     &::after {
-      background-image: url("../img/contest-bg-table.png");
+      background-image: url("../img/contest-images/contest-bg-table.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/contest-images/contest-bg-table@2x.png");
+        background-size: 707px auto;
+      }
     }
   }
 
@@ -49,10 +59,15 @@
     padding: 186px 43px 42px 43px;
 
     &::after {
-      background-image: url("../img/contest-bg-desctop.png");
+      background-image: url("../img/contest-images/contest-bg-desktop.png");
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/contest-images/contest-bg-desktop@2x.png");
+        background-size: 245px auto;
+      }
     }
   }
 }
