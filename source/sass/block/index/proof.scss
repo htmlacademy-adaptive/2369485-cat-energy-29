@@ -36,7 +36,7 @@
   height: 40px;
   border: none;
   border-radius: 50%;
-  background-image: url("../img/slider-button.svg");
+  background-image: url("../img/button-slider-images/slider-button.svg");
   background-repeat: no-repeat;
   cursor: pointer;
 
@@ -46,7 +46,7 @@
   }
 
   &:active {
-    background-image: url("../img/button-slider-active.svg");
+    background-image: url("../img/button-slider-images/button-slider-active.svg");
     opacity: 0.6;
   }
 
@@ -79,7 +79,7 @@
     }
 
     &:hover {
-      background-image: url("../img/button-slider-hover.svg");
+      background-image: url("../img/button-slider-images/button-slider-hover.svg");
     }
 
     &:focus {
@@ -92,7 +92,7 @@
     }
 
     &:active {
-      background-image: url("../img/button-slider-active.svg");
+      background-image: url("../img/button-slider-images/button-slider-active.svg");
       opacity: 0.6;
     }
 
@@ -111,7 +111,7 @@
     }
 
     &:hover {
-      background-image: url("../img/button-slider-hover.svg");
+      background-image: url("../img/button-slider-images/button-slider-hover.svg");
     }
 
     &:focus {
@@ -124,7 +124,7 @@
     }
 
     &:active {
-      background-image: url("../img/button-slider-active.svg");
+      background-image: url("../img/button-slider-images/button-slider-active.svg");
       opacity: 0.6;
     }
 
@@ -179,6 +179,7 @@
 
 @media (min-width: $table-width) {
   .proof__img-slider {
+    position: absolute;
     width: 520px;
     height: 512px;
   }
