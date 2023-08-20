@@ -148,24 +148,24 @@
 
 .about-properties__card-description--substances {
   &::after {
-    background-image: url("../img/card-about-leaf.svg");
+    background-image: url("../img/card-about-images/card-about-leaf.svg");
   }
 }
 
 .about-properties__card-description--powder {
   &::after {
-    background-image: url("../img/card-about-powder.svg");
+    background-image: url("../img/card-about-images/card-about-powder.svg");
   }
 }
 
 .about-properties__card-description--replace {
   &::after {
-    background-image: url("../img/card-about-cutlery.svg");
+    background-image: url("../img/card-about-images/card-about-cutlery.svg");
   }
 }
 
 .about-properties__card-description--changes {
   &::after {
-    background-image: url("../img/card-about-time.svg");
+    background-image: url("../img/card-about-images/card-about-time.svg");
   }
 }

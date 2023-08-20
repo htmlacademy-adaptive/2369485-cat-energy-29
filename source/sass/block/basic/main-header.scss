@@ -20,11 +20,6 @@
   }
 
   .main-header__logo {
-    background-image: url("../img/logo-tablet-header.svg");
-    background-repeat: no-repeat;
-    width: 180px;
-    height: 50px;
-
     &:hover {
       opacity: 0.6;
     }
@@ -43,7 +38,8 @@
   }
 
   .main-header__logo-images {
-    opacity: 0;
+    width: 174px;
+    height: 50px;
   }
 }
 
@@ -53,8 +49,6 @@
   }
 
   .main-header__logo {
-    background-image: url("../img/logo-desktop-header.svg");
-    background-repeat: no-repeat;
     width: 202px;
     height: 59px;
     margin-top: 56px;
@@ -77,6 +71,7 @@
   }
 
   .main-header__logo-images {
-    opacity: 0;
+    width: 202px;
+    height: 59px;
   }
 }

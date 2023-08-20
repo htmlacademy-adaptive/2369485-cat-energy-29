@@ -17,11 +17,15 @@
   }
 
   &::before {
-    background-image: url("../img/hero-background.jpg");
+    background-image: url("../img/hero-images/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-images/hero-background@2x.jpg");
+    }
   }
 
   @media (min-width: $table-width) {
@@ -48,11 +52,15 @@
     }
 
     &::before {
-      background-image: url("../img/index-background-desktop.jpg");
+      background-image: url("../img/hero-images/index-background-desktop.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       z-index: -2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-images/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -62,7 +70,7 @@
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 25px;
-  width: 249px;
+  min-width: 249px;
 
   @media (min-width: $table-width) {
     color: $standard-black;
@@ -71,11 +79,11 @@
     margin-bottom: 40px;
     margin-left: 0;
     margin-right: 0;
-    width: 414px;
+    min-width: 415px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 414px;
+    min-width: 415px;
     text-align: start;
     margin-bottom: 40px;
     margin-top: 10px;
@@ -83,17 +91,22 @@
 }
 
 .hero__images {
+  display: block;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   top: 28px;
 
   @media (min-width: $table-width) {
-    display: none;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    top: -314px;
+    left: 645px;
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -110,7 +123,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: start;
-    margin-bottom: 51px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,39 +135,24 @@
   }
 }
 
-.hero__interective-wrapper {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 200px;
-  background-color: transparent;
-  max-width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $table-width) {
-    margin: 0;
-    margin-left: 120px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
-    margin-left: 0;
-  }
-}
-
 .hero__guide-button {
   position: relative;
-  display: block;
+  min-width: 280px;
   top: 48px;
-  margin: 0 20px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 7px 44px;
   text-decoration: none;
   color: $standard-white;
   font-size: 14px;
   line-height: 18px;
+  box-sizing: border-box;
 
   @media (min-width: $table-width) {
-    position: static;
+    position: relative;
+    top: -570px;
+    left: 206px;
+    min-width: 244px;
     display: inline-block;
     margin: 0;
     padding: 16px 26px;
@@ -163,7 +161,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
+    position: relative;
+    min-width: 244px;
+    top: -499px;
+    left: 123px;
     display: inline-block;
     margin: 0;
     padding: 16px 26px;
@@ -179,44 +180,9 @@
     margin-top: 65px;
     margin-left: 90px;
   }
-
-  .hero__images-wrapper {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 709px;
-      height: 609px;
-      top: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-image: url("../img/hero-images-tablet.png");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .hero__images-wrapper {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 552px;
-      height: 492px;
-      top: -315px;
-      left: 56.5%;
-      background-image: url("../img/hero-images-desctop.png");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-    }
-  }
-
   .hero__text-wrapper {
     width: 414px;
     margin-top: 0;

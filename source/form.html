@@ -7,12 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="img/favicon/favicon-S-32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/favicon-S-180.png">
+    <link rel="manifest" href="../manifest.webmanifest">
     <title>Подбор программы</title>
   </head>
   <body class="page__body body">
     <header class="body__main-header main-header">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-images" src="img/logo-mobile-icon.svg" width="33" height="38" alt="Логотип с иконкой котика.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-header/logo-desktop-header.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-header/logo-tablet-header.svg">
+          <img class="main-header__logo-images" src="img/logo-header/logo-mobile-icon.svg" width="33" height="38" alt="Логотип с иконкой котика.">
+        </picture>
       </a>
       <a class="main-header__logo main-header__logo-lettering logo-lettering" href="index.html">
         <img class="main-header__logo-images" src="img/logo-text.svg" width="101" height="18" alt="Логотип с надписью 'Cat Energy'.">
@@ -202,7 +210,7 @@
     <footer class="body__main-footer main-footer">
       <div class="main-footer__logo-wrapper">
         <a class="main-footer__logo logo-lettering" href="#">
-          <img src="img/logo-footer.svg" alt="Логотип с надписью 'Cat Energy'.">
+          <img src="img/logo-images/logo-footer.svg" alt="Логотип с надписью 'Cat Energy'.">
         </a>
       </div>
       <section class="main-footer__social social">
