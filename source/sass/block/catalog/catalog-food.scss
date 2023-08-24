@@ -78,7 +78,7 @@
   @media (min-width: $table-width) {
     position: relative;
     margin-bottom: 0;
-    height: 430px;
+    min-height: 430px;
     padding-left: 36px;
     padding-right: 36px;
     box-sizing: border-box;

@@ -98,11 +98,13 @@
   top: 28px;
 
   @media (min-width: $table-width) {
+    position: relative;
     width: 709px;
     height: 609px;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     top: -314px;
     left: 645px;
     width: 552px;
@@ -174,16 +176,14 @@
   }
 }
 
-@media (min-width: $table-width) {
-  .hero__text-wrapper {
+.hero__text-wrapper {
+  @media (min-width: $table-width) {
     width: 414px;
     margin-top: 65px;
     margin-left: 90px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .hero__text-wrapper {
+  @media (min-width: $desktop-width) {
     width: 414px;
     margin-top: 0;
     margin-left: 0;

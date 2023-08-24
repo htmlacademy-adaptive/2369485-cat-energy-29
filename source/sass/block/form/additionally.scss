@@ -85,6 +85,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     row-gap: 0;
     column-gap: 0;
     margin-bottom: 47px;
