@@ -10,27 +10,20 @@
   }
 
   &--state {
-    @media (min-width: $table-width) {
-      &:hover path,
-      &:focus path {
-        fill: $base-color;
-      }
+    fill: $dim-gray;
 
+    @media (min-width: $table-width) {
       &:hover,
       &:focus {
+        fill: $base-color;
         color: $base-color;
       }
     }
 
     @media (min-width: $desktop-width) {
-      &:hover path,
-      &:focus path {
-        fill: $base-color;
-      }
-
       &:hover,
       &:focus {
-        color: $base-color;
+        fill: $base-color;
       }
     }
   }

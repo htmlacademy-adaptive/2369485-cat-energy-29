@@ -7,8 +7,9 @@
   padding-top: 40px;
   margin-bottom: 40px;
   text-align: center;
+  fill: $shade-black;
 
-  &:active path {
+  &:active {
     fill: #6b6b6b;
   }
 
@@ -16,23 +17,23 @@
     padding-top: 0;
     margin-bottom: 0;
 
-    &:hover path,
-    &:focus path {
+    &:hover,
+    &:focus {
       fill: #3e3e3e;
     }
 
-    &:active path {
+    &:active {
       fill: #6b6b6b;
     }
   }
 
   @media (min-width: $desktop-width) {
-    &:hover path,
-    &:focus path {
+    &:hover,
+    &:focus {
       fill: #3e3e3e;
     }
 
-    &:active path {
+    &:active {
       fill: #6b6b6b;
     }
   }

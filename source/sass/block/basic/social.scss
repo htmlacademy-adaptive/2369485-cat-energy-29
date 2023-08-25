@@ -46,8 +46,10 @@
 }
 
 .social__link {
-  &:hover path,
-  &:focus path {
+  fill: $dim-gray;
+
+  &:hover,
+  &:focus {
     fill: $base-color;
   }
 

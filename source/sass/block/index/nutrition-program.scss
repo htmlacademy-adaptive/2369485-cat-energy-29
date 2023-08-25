@@ -67,7 +67,6 @@
   @media (min-width: $desktop-width) {
     position: relative;
     padding: 78px 61px 59px 51px;
-    margin-right: 80px;
     min-width: 570px;
     min-height: 374px;
     margin-bottom: 0;
@@ -85,6 +84,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
     flex-direction: row;
   }
 }
