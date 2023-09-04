@@ -8,7 +8,7 @@ import rename from 'gulp-rename';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import svgstore from 'svgstore';
+import svgstore from 'gulp-svgstore';
 import svgo from 'gulp-svgmin';
 import squoosh from 'gulp-libsquoosh';
 import del from 'del';
@@ -78,7 +78,7 @@ export const sprite = () =>
 export const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
-    'source/*.ico',
+    '*.ico',
     'manifest.webmanifest',
   ], {
     base: 'source'
