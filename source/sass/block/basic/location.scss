@@ -99,14 +99,14 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: url("../img/map.png");
+  background-image: image-set("../img/map-images/map.webp", "../img/map-images/map.png"),;
 
   @media (min-width: $table-width) {
-    background-image: url("../img/map-table.png");
+    background-image: image-set("../img/map-images/map-table.webp", "../img/map-images/map-table.png");
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/map-desktop.png");
+    background-image: image-set("../img/map-images/map-desktop.webp", "../img/map-images/map-desktop.png");
   }
 }
 

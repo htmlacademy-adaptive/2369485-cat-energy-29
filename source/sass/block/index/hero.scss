@@ -17,14 +17,14 @@
   }
 
   &::before {
-    background-image: url("../img/hero-images/hero-background.jpg");
+    background-image: image-set("../img/hero-images/hero-background.webp", "../img/hero-images/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -2;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-images/hero-background@2x.jpg");
+      background-image: image-set("../img/hero-images/hero-background@2x.webp", "../img/hero-images/hero-background@2x.jpg");
     }
   }
 
