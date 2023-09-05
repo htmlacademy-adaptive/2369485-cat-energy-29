@@ -29,45 +29,45 @@ export const styles = () => {
 }
 
 // HTML
-const html = () => {
+export const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
 }
 
 // Scripts
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'))
 }
 
 // Images
-const optimizeImages = () => {
+export const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
 }
 
-const copyImages = () => {
+export const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'))
 }
 
 // Webp
-const createWebp = () => {
+export const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh({webp: {}}))
   .pipe(gulp.dest('build/img'))
 }
 
 // SVG
-const svg = () =>
+export const svg = () =>
   gulp.src(['source/img/**/*.svg', '!source/img/sprite-icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () =>
+export const sprite = () =>
   gulp.src(['source/img/sprite-icons/*.svg'])
     .pipe(svgo())
     .pipe(svgstore({inlineSvg: true}))
@@ -75,11 +75,11 @@ const sprite = () =>
     .pipe(gulp.dest('build/img'));
 
 //Copy
-const copy = (done) => {
+export const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2,woff}',
-    '*.ico',
-    'manifest.webmanifest',
+    'source/fonts/**/*.{woff2,woff}',
+    'source/*.ico',
+    'source/manifest.webmanifest',
   ], {
     base: 'source'
   })
@@ -88,7 +88,7 @@ const copy = (done) => {
 }
 
 //Clean
-const clean = () => {
+export const clean = () => {
   return del('build');
 };
 
@@ -124,12 +124,12 @@ const watcher = () => {
 export const build = gulp.series (
   clean,
   copy,
+  svg,
   optimizeImages,
   gulp.parallel(
     styles,
     html,
     scripts,
-    svg,
     sprite,
     createWebp
   ),
@@ -140,12 +140,12 @@ export const build = gulp.series (
 export default gulp.series(
   clean,
   copy,
+  svg,
   copyImages,
   gulp.parallel(
     styles,
     html,
     scripts,
-    svg,
     sprite,
     createWebp
   ),
