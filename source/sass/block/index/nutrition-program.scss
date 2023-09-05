@@ -166,14 +166,14 @@
     right: 0;
     width: 32px;
     height: 10px;
-    background-image: url("../img/arrow-right.svg");
+    background-image: url("../img/arrow-images/arrow-right.svg");
     background-repeat: no-repeat;
   }
 
   @media (min-width: $table-width) {
     &:hover {
       &::after {
-        background-image: url("../img/arrow-right-hover.svg");
+        background-image: url("../img/arrow-images/arrow-right-hover.svg");
       }
     }
 
@@ -193,7 +193,7 @@
   @media (min-width: $desktop-width) {
     &:hover {
       &::after {
-        background-image: url("../img/arrow-right-hover.svg");
+        background-image: url("../img/arrow-images/arrow-right-hover.svg");
       }
     }
 
