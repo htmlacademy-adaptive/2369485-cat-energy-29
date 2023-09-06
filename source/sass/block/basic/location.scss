@@ -99,14 +99,17 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: image-set("../img/map-images/map.webp", "../img/map-images/map.png"),;
+  background-image: url("../img/map-images/map.png");/* stylelint-disable-next-line */
+  background-image: image-set(url("../img/map-images/map.webp") type("image/webp"));
 
   @media (min-width: $table-width) {
-    background-image: image-set("../img/map-images/map-table.webp", "../img/map-images/map-table.png");
+    background-image: url("../img/map-images/map-table.png");/* stylelint-disable-next-line */
+    background-image: image-set(url("../img/map-images/map-table.webp") type("image/webp"));
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set("../img/map-images/map-desktop.webp", "../img/map-images/map-desktop.png");
+    background-image: url("../img/map-images/map-desktop.png");/* stylelint-disable-next-line */
+    background-image: image-set(url("../img/map-images/map-desktop.webp") type("image/webp"));
   }
 }
 

@@ -17,14 +17,16 @@
   }
 
   &::before {
-    background-image: image-set("../img/hero-images/hero-background.webp", "../img/hero-images/hero-background.jpg");
+    background-image: url("../img/hero-images/hero-background.jpg");/* stylelint-disable-next-line */
+    background-image: image-set(url("../img/hero-images/hero-background.webp") type("image/webp"));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -2;
 
     @media (min-resolution: 2dppx) {
-      background-image: image-set("../img/hero-images/hero-background@2x.webp", "../img/hero-images/hero-background@2x.jpg");
+      background-image: url("../img/hero-images/hero-background@2x.jpg");/* stylelint-disable-next-line */
+      background-image: image-set(url("../img/hero-images/hero-background@2x.webp") type("image/webp") 2x);
     }
   }
 
