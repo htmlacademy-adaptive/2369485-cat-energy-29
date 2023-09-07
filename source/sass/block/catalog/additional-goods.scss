@@ -134,6 +134,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 34px;
 
     &:first-child {
@@ -238,10 +239,6 @@
   }
 
   .additional-goods__options {
-    margin-right: auto;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    margin-right: 0;
   }
 }
