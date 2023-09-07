@@ -6,7 +6,7 @@
   margin-top: 0;
 
   @media (min-width: $table-width) {
-    margin-top: 64px;
+    margin-top: 25px;
     margin-bottom: 163px;
     text-align: start;
   }
@@ -119,6 +119,14 @@
   @media (min-width: $table-width) {
     position: relative;
     text-decoration: none;
+
+    &--odd {
+      top: -44px;
+    }
+
+    &--even {
+      top: -72px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -142,6 +150,15 @@
     max-width: 150px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 17px;
+
+    &--odd {
+      margin-top: -10px;
+    }
+
+    &--even {
+      margin-top: -44px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -196,8 +213,41 @@
   width: 140px;
 
   @media (min-width: $table-width) {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     width: 100%;
+
+    &--first-child {
+      margin-left: 0;
+    }
+
+    &--second-child {
+      margin-left: 0;
+    }
+
+    &--third-child {
+      margin-top: -1px;
+      margin-left: 1px;
+    }
+
+    &--fourth-child {
+      margin-left: 1px;
+      margin-top: 6px;
+    }
+
+    &--fifth-child {
+      margin-top: 1px;
+      margin-left: 1px;
+    }
+
+    &--sixth-child {
+      margin-left: 1px;
+      margin-top: 6px;
+    }
+
+    &--seventh-child {
+      margin-top: -2px;
+      margin-left: 1px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -269,7 +319,7 @@
     margin: 0 auto;
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 53px;
+    margin-bottom: 87px;
   }
 
   @media (min-width: $desktop-width) {
@@ -283,8 +333,13 @@
   justify-content: space-between;
 
   @media (min-width: $table-width) {
-    width: 248px;
+    max-width: 245px;
     margin-bottom: 14px;
+    margin-top: 2px;
+
+    &--even {
+      max-width: 250px;
+    }
 
     &:last-child {
       margin-bottom: 0;
