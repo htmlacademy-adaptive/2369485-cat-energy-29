@@ -1,8 +1,8 @@
 .additional-goods__title {
   position: relative;
   margin-top: 0;
-  margin-bottom: 49px;
-  text-transform: capitalize;
+  margin-bottom: 42px;
+  text-transform: none;
 
   &::before {
     position: absolute;
@@ -175,6 +175,7 @@
 
     &::before {
       top: -18px;
+      width: 100%;
     }
   }
 }
@@ -184,6 +185,18 @@
   justify-content: space-between;
   margin-top: 0;
   margin-bottom: 15px;
+
+  &--first-child {
+    margin-left: 3px;
+  }
+
+  &--second-child {
+    max-width: 279px;
+  }
+
+  &--fourth-child {
+    margin-left: 1px;
+  }
 
   @media (min-width: $table-width) {
     position: relative;
@@ -229,6 +242,14 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+
+  &--third-child {
+    margin-bottom: 14px;
+  }
+
+  &--fourth-child {
+    margin-bottom: 14px;
+  }
 
   @media (min-width: $table-width) {
     top: 0;
