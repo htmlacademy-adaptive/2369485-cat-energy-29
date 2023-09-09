@@ -2,10 +2,15 @@
   background-color: $standard-white;
   padding: 13px 20px 14px 20px;
 
+  &--index {
+    padding-bottom: 10px;
+  }
+
   @media (min-width: $table-width) {
     padding-top: 25px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,10 +19,7 @@
 }
 
 .main-header__logo-lettering {
-  &--catalog {
-    position: relative;
-    margin-right: 10px;
-  }
+  margin-right: 10px;
 }
 
 @media (min-width: $table-width) {

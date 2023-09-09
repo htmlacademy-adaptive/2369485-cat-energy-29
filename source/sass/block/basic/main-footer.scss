@@ -71,6 +71,7 @@
     grid-template-columns: 113px 27px;
     width: 168px;
     margin: 0;
+    grid-column-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,6 +82,11 @@
 
 .main-footer__copyright {
   position: relative;
+
+  @media (min-width: $table-width) {
+    top: -2px;
+    left: 7px;
+  }
 
   @media (min-width: $desktop-width) {
     left: 5px;

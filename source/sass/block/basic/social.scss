@@ -22,9 +22,10 @@
 
   @media (min-width: $table-width) {
     margin-bottom: 0;
+    margin-left: 42px;
 
     &::after {
-      position: static;
+      display: none;
     }
   }
 

@@ -1,5 +1,5 @@
 .main-container__proof {
-  padding: 25px 20px 40px 20px;
+  padding: 25px 20px 35px 20px;
   background-color: #eaeaea;
   max-width: 280px;
   margin: 0 auto;
@@ -9,6 +9,7 @@
     background-color: $standard-white;
     max-width: 708px;
     padding: 0 30px;
+    padding-left: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,13 +28,16 @@
 
   @media (min-width: $table-width) {
     max-width: 708px;
+    padding-left: 40px;
     margin: 0 auto;
     margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
-    margin-bottom: 72px;
+    margin-top: -234px;
+    margin-bottom: 71px;
+    margin-left: 310px;
   }
 }
 
@@ -42,21 +46,23 @@
   padding: 27px 35px 10px 35px;
   margin: 0 auto;
   z-index: 1;
-  margin-bottom: 198px;
+  margin-bottom: 29px;
   width: 280px;
-  max-height: 302px;
+  min-height: 301px;
 
   @media (min-width: $table-width) {
+    margin-top: 75px;
     width: 708px;
     padding: 0 30px;
-    margin-bottom: 635px;
+    padding-left: 38px;
+    margin-bottom: -31px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding: 100px 0 177px 78px;
-    margin-bottom: 358px;
+    padding: 100px 0 0 78px;
+    margin-bottom: 0;
     box-sizing: border-box;
   }
 }
@@ -81,19 +87,20 @@
 .main-container__about-properties {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 49px;
+  margin-bottom: 53px;
   max-width: 280px;
 
   @media (min-width: $table-width) {
     max-width: 708px;
     margin-bottom: 149px;
+    padding-left: 40px;
 
     &::before {
       position: absolute;
       content: "";
-      left: 50%;
+      left: 50.5%;
       transform: translateX(-50%);
-      bottom: -110px;
+      bottom: -105px;
       width: 768px;
       height: 1px;
       background-color: #e6e6e6;
@@ -103,6 +110,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1224px;
     margin-bottom: 203px;
+    padding-left: 115px;
 
     &::before {
       display: none;
