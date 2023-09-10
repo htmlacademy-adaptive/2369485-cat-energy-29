@@ -8,7 +8,7 @@
   margin-bottom: 58px;
 
   @media (min-width: $table-width) {
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left: 0;
     margin-bottom: 163px;
     text-align: start;
@@ -166,7 +166,7 @@
 
 
     &--first-child {
-      left: none;
+      left: 0;
     }
 
     &--second-child {
@@ -174,26 +174,28 @@
     }
 
     &--third-child {
-      top: none;
-      left: none;
+      top: -47px;
+      left: 0;
     }
 
     &--fourth-child {
       top: none;
+      margin-bottom: 8px;
     }
 
     &--fifth-child {
       top: none;
-      left: none;
+      left: 0;
     }
 
     &--sixth-child {
       top: none;
+      margin-bottom: 6px;
     }
 
     &--seventh-child {
-      top: none;
-      left: none;
+      top: -47px;
+      left: 0;
     }
   }
 
@@ -280,7 +282,7 @@
     margin-bottom: 17px;
 
     &--odd {
-      margin-top: -10px;
+      margin-top: -11px;
     }
 
     &--even {
@@ -311,6 +313,8 @@
     text-align: center;
     font-size: 16px;
     line-height: 20px;
+    margin-top: -1px;
+    margin-left: -4px;
   }
 }
 
@@ -399,6 +403,7 @@
     &--fourth-child {
       margin-left: 1px;
       margin-top: 6px;
+      margin-bottom: 1px;
     }
 
     &--fifth-child {
@@ -409,6 +414,7 @@
     &--sixth-child {
       margin-left: 1px;
       margin-top: 6px;
+      margin-bottom: 3px;
     }
 
     &--seventh-child {
@@ -430,12 +436,14 @@
     }
 
     &--third-child {
-      margin-top: -1px;
+      margin-top: -2px;
       margin-left: 1px;
     }
 
     &--fourth-child {
-      margin-left: 1px;
+      margin-top: -1px;
+      margin-left: -1px;
+      margin-bottom: 3px;
     }
 
     &--fifth-child {
@@ -444,7 +452,9 @@
     }
 
     &--sixth-child {
-      margin-left: 1px;
+      margin-top: 1px;
+      margin-left: -1px;
+      margin-bottom: 3px;
     }
 
     &--seventh-child {
@@ -529,8 +539,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 165px;
-    margin-bottom: 16px;
+    max-width: 163px;
+    margin-bottom: 13px;
 
     &--even {
       max-width: 170px;

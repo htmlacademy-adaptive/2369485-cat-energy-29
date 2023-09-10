@@ -38,7 +38,8 @@
   @media (min-width: $table-width) {
     width: 708px;
     height: 200px;
-    padding: 71px 125px 69px 421px;
+    padding: 70px 125px 69px 424px;
+    word-spacing: 0.6px;
     box-sizing: border-box;
 
     &::after {
@@ -89,19 +90,17 @@
 
   @media (min-width: $table-width) {
     &::before {
-      top: 65px;
-      left: 130px;
-      width: 78px;
-      height: 81px;
+      top: 55px;
+      left: 120px;
     }
   }
 
-  @media (min-width: $table-width) {
-    &::before {
-      top: 40px;
-      left: 124px;
-    }
-  }
+  // @media (min-width: $desktop-width) {
+  //   &::before {
+  //     top: 40px;
+  //     left: 124px;
+  //   }
+  // }
 }
 
 .contest__description {

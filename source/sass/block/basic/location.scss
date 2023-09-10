@@ -119,6 +119,10 @@
   .location__city-wrapper {
     display: block;
     margin-top: 19px;
+
+    &--catalog {
+      margin-top: 0;
+    }
   }
 }
 
