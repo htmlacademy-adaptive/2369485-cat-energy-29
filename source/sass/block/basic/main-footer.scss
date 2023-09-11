@@ -83,9 +83,17 @@
 .main-footer__copyright {
   position: relative;
 
+  &--form-page {
+    margin-top: -4px;
+  }
+
   @media (min-width: $table-width) {
     top: -2px;
     left: 7px;
+
+    &--form-page {
+      margin-top: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {

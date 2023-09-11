@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 0;
   text-transform: capitalize;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 
   &::before {
     position: absolute;
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $table-width) {
-    margin-bottom: 57px;
+    margin-bottom: 68px;
 
 
     &::after {
@@ -73,14 +73,14 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   @media (min-width: $table-width) {
     display: grid;
     grid-template-columns: 221px 221px;
     column-gap: 123px;
-    row-gap: 32px;
-    margin-bottom: 54px;
+    row-gap: 30px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,6 +96,7 @@
   margin-bottom: 25px;
 
   &:last-child {
+    margin-top: -2px;
     margin-bottom: 0;
   }
 
@@ -124,8 +125,12 @@
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 16px;
+  word-spacing: 0.2px;
 
   @media (min-width: $table-width) {
+    position: relative;
+    top: -6px;
+    left: -5px;
     display: inline;
     font-size: 16px;
   }
@@ -142,20 +147,23 @@
 .additionally__submit-form {
   display: block;
   margin: 0 auto;
-  margin-bottom: 21px;
-  width: 100%;
-  padding: 7px 44px;
+  margin-bottom: 22px;
+  min-width: 280px;
+  padding: 10px 44px;
 
   @media (min-width: $table-width) {
     display: inline-block;
     margin: 0;
-    width: 282px;
+    min-width: 284px;
     padding: 14px 45px;
     margin-right: 64px;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 16px 0;
+    padding: 14px 0;
     min-width: 570px;
     margin-right: 80px;
     font-size: 20px;
@@ -163,7 +171,11 @@
 }
 
 .additionally__name-additionally {
-  padding-left: 60px;
+  padding-left: 45px;
+
+  @media (min-width: $table-width) {
+    padding-left: 60px;
+  }
 }
 
 .additionally__options-control {
@@ -181,8 +193,8 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   background-color: $standard-white;
   border: 1px solid $light-grey;
   cursor: pointer;
@@ -192,8 +204,8 @@
   }
 
   @media (min-width: $table-width) {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -208,7 +220,7 @@
   background-image: url("../img/tick-catalog-add.svg");
   height: 26px;
   width: 26px;
-  left: 50%;
-  top: 50%;
+  left: 54%;
+  top: 48%;
   transform: translate(-50%, -50%);
 }

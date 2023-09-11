@@ -16,8 +16,32 @@
   position: relative;
   margin-right: 9px;
 
+  &--name {
+    margin-right: 10px;
+  }
+
+  &--weight {
+    margin-right: 9px;
+  }
+
+  &--age {
+    margin-right: 10px;
+  }
+
   @media (min-width: $table-width) {
     margin-right: 6px;
+
+    &--name {
+      margin-right: 8px;
+    }
+
+    &--weight {
+      margin-right: 8px;
+    }
+
+    &--age {
+      margin-right: 9px;
+    }
   }
 
   @media (min-width: $desktop-width) {

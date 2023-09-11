@@ -26,6 +26,10 @@
   .main-header__main-nav {
     width: 440px;
     margin-left: auto;
+
+    &--form-page {
+      margin-left: 93px;
+    }
   }
 
   .main-header__logo {

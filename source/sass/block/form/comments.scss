@@ -2,7 +2,7 @@
   position: relative;
   text-transform: capitalize;
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 
   &::before {
     position: absolute;
@@ -72,7 +72,7 @@
   padding: 14px 14px 14px 15px;
   box-sizing: border-box;
   min-width: 280px;
-  height: 144px;
+  max-height: 150px;
   border: none;
   outline: 1px solid $whisper;
 
@@ -90,7 +90,7 @@
   @media (min-width: $table-width) {
     padding: 11px 20px;
     min-width: 100%;
-    height: 175px;
+    max-height: 175px;
   }
 
   @media (min-width: $desktop-width) {

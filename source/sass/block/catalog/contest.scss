@@ -95,12 +95,12 @@
     }
   }
 
-  // @media (min-width: $desktop-width) {
-  //   &::before {
-  //     top: 40px;
-  //     left: 124px;
-  //   }
-  // }
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 40px;
+      left: 124px;
+    }
+  }
 }
 
 .contest__description {
