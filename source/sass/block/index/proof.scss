@@ -43,13 +43,15 @@
 .proof__button-slider {
   position: relative;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 
   &:active::before {
     background-color: #5eaa2f;
     opacity: 0.6;
   }
 
-  &:active {
+  &:active::after {
     background-image: url("../img/button-slider-images/button-slider-active.svg");
     opacity: 0.6;
   }
@@ -97,11 +99,11 @@
       background-color: $base-color;
     }
 
-    &:hover {
+    &:hover::after {
       background-image: url("../img/button-slider-images/button-slider-hover.svg");
     }
 
-    &:focus {
+    &:focus::after {
       outline: 2px solid $standard-black;
     }
 
@@ -110,7 +112,7 @@
       opacity: 0.6;
     }
 
-    &:active {
+    &:active::after {
       background-image: url("../img/button-slider-images/button-slider-active.svg");
       opacity: 0.6;
     }
@@ -136,11 +138,11 @@
       background-color: $base-color;
     }
 
-    &:hover {
+    &:hover::after {
       background-image: url("../img/button-slider-images/button-slider-hover.svg");
     }
 
-    &:focus {
+    &:focus::after {
       outline: 2px solid $standard-black;
     }
 
@@ -149,7 +151,7 @@
       opacity: 0.6;
     }
 
-    &:active {
+    &:active::after {
       background-image: url("../img/button-slider-images/button-slider-active.svg");
       opacity: 0.6;
     }
@@ -432,6 +434,7 @@
 
   .proof__text-wrapper {
     width: 436px;
+    padding-bottom: 20px;
     margin-bottom: 0;
   }
 

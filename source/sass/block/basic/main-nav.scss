@@ -18,10 +18,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    position: relative;
     width: 480px;
-    left: 60.6%;
-    top: 65px;
+    left: -39px;
+    top: 34px;
   }
 }
 

@@ -43,6 +43,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 76px;
+    width: 190px;
+    word-wrap: break-word;
 
     &::after {
       position: absolute;
@@ -62,7 +64,7 @@
       height: 2px;
       top: 23px;
       transform: translateY(-50%);
-      right: -110px;
+      right: -1140px;
       background-color: $base-color;
     }
   }

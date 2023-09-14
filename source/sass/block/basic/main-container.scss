@@ -37,7 +37,7 @@
     max-width: 1220px;
     margin-top: -234px;
     margin-bottom: 71px;
-    margin-left: 310px;
+    margin-left: 302px;
   }
 }
 
@@ -148,6 +148,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     width: 1440px;
+    height: 100%;
     margin: 0 auto;
   }
 }

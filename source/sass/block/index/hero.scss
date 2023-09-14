@@ -146,7 +146,7 @@
 
 .hero__guide-button {
   position: relative;
-  min-width: 280px;
+  width: 280px;
   top: 19px;
   left: 50%;
   transform: translateX(-50%);
@@ -161,7 +161,7 @@
     position: relative;
     top: -558px;
     left: 210px;
-    min-width: 244px;
+    max-width: 244px;
     display: inline-block;
     margin: 0;
     padding: 16px 26px;

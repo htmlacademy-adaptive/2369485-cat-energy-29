@@ -42,6 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 512px;
     margin-bottom: 76px;
     text-transform: inherit;
 
@@ -63,7 +64,7 @@
       height: 2px;
       top: 18px;
       transform: translateY(-50%);
-      right: -110px;
+      right: -818px;
       background-color: $base-color;
     }
   }
