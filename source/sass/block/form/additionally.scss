@@ -3,6 +3,8 @@
   margin-top: 0;
   text-transform: capitalize;
   margin-bottom: 34px;
+  width: 141px;
+  word-wrap: break-word;
 
   &::before {
     position: absolute;
@@ -11,12 +13,14 @@
     height: 2px;
     top: 21px;
     transform: translateY(-50%);
-    right: -20px;
+    right: -160px;
     background-color: $base-color;
   }
 
   @media (min-width: $table-width) {
     margin-bottom: 68px;
+    width: 215px;
+    word-wrap: break-word;
 
 
     &::after {
@@ -37,7 +41,7 @@
       height: 2px;
       top: 23px;
       transform: translateY(-50%);
-      right: -70px;
+      right: -483px;
       background-color: $base-color;
     }
   }
@@ -110,11 +114,12 @@
     }
 
     &:nth-child(3) {
-      margin-right: 198px;
+      margin-right: 199px;
     }
 
 
     &:last-child {
+      margin-top: 0;
       margin-right: 0;
     }
   }
@@ -219,10 +224,18 @@
 .control-input[type="checkbox"]:checked + .additionally__control-mark::before {
   position: absolute;
   content: "";
-  background-image: url("../img/tick-catalog-add.svg");
+  background-image: url("../img/tick-catalog-add-mobile.svg");
   height: 26px;
   width: 26px;
   left: 54%;
-  top: 48%;
+  top: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $table-width) {
+    background-image: url("../img/tick-catalog-add.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/tick-catalog-add.svg");
+  }
 }
