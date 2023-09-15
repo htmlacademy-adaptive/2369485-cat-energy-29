@@ -35,6 +35,8 @@
   font-size: 14px;
   line-height: 20px;
   width: 163px;
+  margin-left: 13px;
+  word-spacing: 1px;
 
   @media (min-width: $table-width) {
     font-size: 16px;
@@ -58,7 +60,7 @@
 
   @media (min-width: $table-width) {
     padding: 60px 70px;
-    width: 625px;
+    width: 629px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,14 +101,17 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: url("../img/map.png");
+  background-image: url("../img/map-images/map.png");/* stylelint-disable-next-line */
+  background-image: image-set(url("../img/map-images/map.webp") type("image/webp"));
 
   @media (min-width: $table-width) {
-    background-image: url("../img/map-table.png");
+    background-image: url("../img/map-images/map-table.png");/* stylelint-disable-next-line */
+    background-image: image-set(url("../img/map-images/map-table.webp") type("image/webp"));
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/map-desktop.png");
+    background-image: url("../img/map-images/map-desktop.png");/* stylelint-disable-next-line */
+    background-image: image-set(url("../img/map-images/map-desktop.webp") type("image/webp"));
   }
 }
 
@@ -114,6 +119,10 @@
   .location__city-wrapper {
     display: block;
     margin-top: 19px;
+
+    &--catalog {
+      margin-top: 0;
+    }
   }
 }
 

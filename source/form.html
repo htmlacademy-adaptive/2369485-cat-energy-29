@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
-    <link rel="icon" href="../favicon.ico">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/favicon-S-32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/favicon-S-180.png">
     <link rel="manifest" href="../manifest.webmanifest">
@@ -25,14 +27,14 @@
       <a class="main-header__logo main-header__logo-lettering logo-lettering" href="index.html">
         <img class="main-header__logo-images" src="img/logo-header/logo-text.svg" width="101" height="18" alt="Логотип с надписью 'Cat Energy'.">
       </a>
-      <nav class="main-header__main-nav main-nav">
+      <nav class="main-header__main-nav main-header__main-nav--form-page main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">
             Открыть меню
           </span>
           <span class="main-nav__burger main-nav__burger--rendering"></span>
         </button>
-        <ul class="main-nav__list  site-list site-list--hidden">
+        <ul class="main-nav__list main-nav__list--form site-list site-list--hidden">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--secondary" href="index.html">
               Главная
@@ -256,7 +258,7 @@
         </ul>
       </section>
       <div class="main-footer__link-wrapper--copyright">
-        <a class="main-footer__copyright copyright-academy--state copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="main-footer__copyright main-footer__copyright--form-page copyright-academy--state copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
         </a>
         <a class="main-footer__link-academy copyright-academy--state copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">

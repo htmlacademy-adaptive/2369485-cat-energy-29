@@ -2,10 +2,15 @@
   background-color: $standard-white;
   padding: 13px 20px 14px 20px;
 
+  &--index {
+    padding-bottom: 10px;
+  }
+
   @media (min-width: $table-width) {
     padding-top: 25px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,10 +18,18 @@
   }
 }
 
+.main-header__logo-lettering {
+  margin-right: 10px;
+}
+
 @media (min-width: $table-width) {
   .main-header__main-nav {
     width: 440px;
     margin-left: auto;
+
+    &--form-page {
+      margin-left: 93px;
+    }
   }
 
   .main-header__logo {

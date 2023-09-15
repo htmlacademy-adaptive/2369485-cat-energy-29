@@ -7,14 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
-    <link rel="icon" href="../favicon.ico">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/favicon-S-32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/favicon-S-180.png">
     <link rel="manifest" href="../manifest.webmanifest">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body body">
-    <header class="body__main-header main-header">
+    <header class="body__main-header body__main-header main-header main-header--index">
       <a class="main-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-header/logo-desktop-header.svg">
@@ -22,7 +24,7 @@
           <img class="main-header__logo-images" src="img/logo-header/logo-mobile-icon.svg" width="33" height="38" alt="Логотип с иконкой котика.">
         </picture>
       </a>
-      <a class="main-header__logo main-header__logo-lettering logo-lettering" href="index.html">
+      <a class="main-header__logo main-header__logo-lettering main-header__logo-lettering--index logo-lettering" href="index.html">
         <img class="main-header__logo-images" src="img/logo-header/logo-text.svg" width="101" height="18" alt="Логотип с надписью 'Cat Energy'.">
       </a>
       <nav class="main-header__main-nav main-nav">
@@ -63,7 +65,7 @@
         </div>
         <div class="hero__images-wrapper">
           <picture>
-            <source media="(min-width: 1440px)" type="image/webp" srcset="img/hero-images/hero-images-desktop.webp 1x, img/hero-images/hero-desktop@2x.webp 2x">
+            <source media="(min-width: 1440px)" type="image/webp" srcset="img/hero-images/hero-images-desktop.webp 1x, img/hero-images/hero-images-desktop@2x.webp 2x">
             <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-images/hero-images-table.webp 1x, img/hero-images/hero-images-table@2x.webp 2x">
             <source type="image/webp" srcset="img/hero-images/hero-images.webp 1x, img/hero-images/hero-images@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/hero-images/hero-images-desktop.png 1x, img/hero-images/hero-images-desktop@2x.png 2x">
@@ -126,7 +128,7 @@
           </li>
           <li class="about-properties__item">
             <p class="about-properties__card-description about-properties__card-description--changes description">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              Уже через месяц наслаждайтесь изменениями к лучшему<br class="about-properties__break-hidden">вашего питомца!
             </p>
           </li>
         </ul>
@@ -139,29 +141,33 @@
           <p class="proof__description description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <div class="proof__indicators-wrappper">
-            <b class="proof__indicators indicators">
-              5 КГ
-              <span class="proof__indicators-name indicators-name">
-                Снижение веса
-              </span>
-            </b>
-            <b class="proof__indicators indicators">
-              60 ДНЕЙ
-              <span class="proof__indicators-name indicators-name">
-                Затрачено времени
-              </span>
+          <div class="proof__indicators-container">
+            <div class="proof__indicators-wrappper">
+              <b class="proof__indicators proof__indicators--prime indicators">
+                5 КГ
+                <span class="proof__indicators-name proof__indicators-name--prime indicators-name">
+                  Снижение веса
+                </span>
+              </b>
+              <b class="proof__indicators proof__indicators--secondary indicators">
+                60 ДНЕЙ
+                <span class="proof__indicators-name proof__indicators-name--secondary indicators-name">
+                  Затрачено времени
+                </span>
+              </b>
+            </div>
+            <b class="proof__food-costs">
+              Затраты на питание: <span class="proof__intended-text">15 000 РУБ.</span>
             </b>
           </div>
-          <b class="proof__food-costs">
-            Затраты на питание: <span class="proof__intended-text">15 000 РУБ.</span>
-          </b>
         </div>
         <div class="proof__slider-wrapper">
           <picture>
+            <source media="(min-width: 1440px)" type="image/webp" srcset="img/slider-images/img-slider-1-table.webp 1x, img/slider-images/img-slider-1-table@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/slider-images/img-slider-1-table.webp 1x, img/slider-images/img-slider-1-table@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/slider-images/img-slider-1-table.png 1x, img/slider-images/img-slider-1-table@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/slider-images/img-slider-1-table.png 1x, img/slider-images/img-slider-1-table@2x.png 2x">
-            <img class="proof__img-slider" src="img/slider-images/img-slider-1-phone.png" width="280" height="256" alt="Фотография кота">
+            <img class="proof__img-slider" src="img/slider-images/img-slider-1-phone.png" srcset="img/slider-images/img-slider-1-phone.webp 1x, img/slider-images/img-slider-1-phone@2x.webp 2x, img/slider-images/img-slider-1-phone@2x.png 2x" width="280" height="256" alt="Фотография кота">
           </picture>
           <button class="proof__button-slider proof__button-slider--positioning" type="button">
           </button>

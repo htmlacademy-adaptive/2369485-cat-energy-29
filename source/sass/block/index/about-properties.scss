@@ -1,13 +1,14 @@
 .about-properties__title {
   margin-top: 0;
+  margin-bottom: 42px;
   text-align: start;
 
   @media (min-width: $table-width) {
-    margin-bottom: 183px;
+    margin-bottom: 181px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: -5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -19,8 +20,8 @@
   @media (min-width: $table-width) {
     display: grid;
     grid-template-columns: 230px 230px;
-    row-gap: 245px;
-    column-gap: 178px;
+    row-gap: 242px;
+    column-gap: 151px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,6 +57,27 @@
       line-height: 280px;
       color: $card-color;
     }
+
+    &:nth-child(2) {
+      &::before {
+        top: -149px;
+        left: 38px;
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        top: -147px;
+        left: 38px;
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        top: -147px;
+        left: 41px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +100,51 @@
       line-height: 280px;
       color: $card-color;
     }
+
+    &:nth-child(2) {
+      &::before {
+        top: 14px;
+        left: 38px;
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        top: 14px;
+        left: 39px;
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        top: 14px;
+        left: 41px;
+      }
+    }
+  }
+}
+
+.about-properties__break-hidden {
+  content: "";
+
+  &::after {
+    content: "\00a0";
+  }
+
+  @media (min-width: $table-width) {
+    content: none;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    content: none;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
@@ -85,6 +152,7 @@
   position: relative;
   padding-left: 80px;
   margin: 0;
+  word-spacing: 1px;
 
   &::before {
     position: absolute;
@@ -111,6 +179,7 @@
 
   @media (min-width: $table-width) {
     padding-left: 0;
+    margin-top: 2px;
 
     &::before {
       width: 80px;
@@ -165,6 +234,10 @@
 }
 
 .about-properties__card-description--changes {
+  @media (min-width: $table-width) {
+    width: 290px;
+  }
+
   &::after {
     background-image: url("../img/card-about-images/card-about-time.svg");
   }

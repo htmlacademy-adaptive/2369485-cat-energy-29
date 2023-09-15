@@ -12,6 +12,7 @@
   @media (min-width: $table-width) {
     display: flex;
     position: relative;
+    left: 1%;
     padding: 0;
     background-color: transparent;
   }
@@ -21,6 +22,24 @@
     width: 480px;
     left: 60.6%;
     top: 65px;
+  }
+
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      position: relative;
+      width: 480px;
+      left: -39px;
+      top: 34px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      position: relative;
+      width: 480px;
+      left: -39px;
+      top: 34px;
+    }
   }
 }
 

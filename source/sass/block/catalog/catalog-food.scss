@@ -3,16 +3,20 @@
 }
 
 .catalog-food__title {
-  margin-top: 0;
+  margin-top: 2px;
+  margin-left: -22px;
+  margin-bottom: 58px;
 
   @media (min-width: $table-width) {
-    margin-top: 64px;
+    margin-top: 40px;
+    margin-left: 0;
     margin-bottom: 163px;
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 55px;
+    margin-left: 0;
   }
 }
 
@@ -52,13 +56,13 @@
   }
 
   &:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   &--secondary {
     display: flex;
     flex-direction: column;
-    padding-top: 53px;
+    padding-top: 59px;
     background-image: url("../img/plus.svg");
     background-repeat: no-repeat;
     background-position: top center;
@@ -66,7 +70,7 @@
     &::after {
       position: absolute;
       content: "";
-      bottom: -30px;
+      bottom: -25px;
       width: 320px;
       left: 50%;
       transform: translateX(-50%);
@@ -114,27 +118,190 @@
 }
 
 .catalog-foot__order-link {
+  position: relative;
   text-decoration: none;
+
+  &--first-child {
+    left: 8px;
+  }
+
+  &--second-child {
+    top: 5px;
+  }
+
+  &--third-child {
+    top: 10px;
+    left: 8px;
+  }
+
+  &--fourth-child {
+    top: 6px;
+  }
+
+  &--fifth-child {
+    top: 13px;
+    left: 8px;
+  }
+
+  &--sixth-child {
+    top: 7px;
+  }
+
+  &--seventh-child {
+    top: 10px;
+    left: 6px;
+  }
 
   @media (min-width: $table-width) {
     position: relative;
     text-decoration: none;
+
+    &--odd {
+      top: -44px;
+    }
+
+    &--even {
+      top: -72px;
+    }
+
+
+    &--first-child {
+      left: 0;
+    }
+
+    &--second-child {
+      top: none;
+    }
+
+    &--third-child {
+      top: -47px;
+      left: 0;
+    }
+
+    &--fourth-child {
+      top: none;
+      margin-bottom: 8px;
+    }
+
+    &--fifth-child {
+      top: none;
+      left: 0;
+    }
+
+    &--sixth-child {
+      top: none;
+      margin-bottom: 6px;
+    }
+
+    &--seventh-child {
+      top: -47px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &--odd {
+      top: -50px;
+    }
+
+    &--even {
+      top: -79px;
+    }
+
+    &--first-child {
+      left: none;
+    }
+
+    &--second-child {
+      top: none;
+    }
+
+    &--third-child {
+      top: none;
+      left: none;
+    }
+
+    &--fourth-child {
+      top: none;
+    }
+
+    &--fifth-child {
+      top: none;
+      left: none;
+    }
+
+    &--sixth-child {
+      top: none;
+    }
+
+    &--seventh-child {
+      top: none;
+      left: none;
+    }
   }
 }
 
 .catalog-food__name-food {
-  margin-top: 0;
   max-width: 90px;
+  margin-top: 8px;
+
+  &--first-child {
+    margin-top: 1px;
+  }
+
+  &--second-child {
+    margin-top: 1px;
+  }
+
+  &--third-child {
+    margin-top: 1px;
+  }
+
+  &--fourth-child {
+    margin-top: 15px;
+  }
+
+  &--fifth-child {
+    margin-top: 0;
+  }
+
+  &--sixth-child {
+    margin-top: 15px;
+  }
+
+  &--seventh-child {
+    margin-top: 1px;
+  }
 
   @media (min-width: $table-width) {
     max-width: 150px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 17px;
+
+    &--odd {
+      margin-top: -11px;
+    }
+
+    &--even {
+      margin-top: -44px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 11px;
     margin-bottom: 23px;
     text-align: center;
+
+    &--odd {
+      margin-top: -7px;
+    }
+
+    &--even {
+      margin-top: -31px;
+    }
   }
 }
 
@@ -146,6 +313,8 @@
     text-align: center;
     font-size: 16px;
     line-height: 20px;
+    margin-top: -1px;
+    margin-left: -4px;
   }
 }
 
@@ -174,14 +343,124 @@
   justify-content: space-between;
   width: 140px;
 
+  &--first-child {
+    margin-left: 44px;
+    margin-bottom: 7px;
+  }
+
+
+  &--second-child {
+    margin-left: 28px;
+    margin-bottom: 7px;
+  }
+
+  &--third-child {
+    margin-left: 44px;
+    margin-bottom: 7px;
+  }
+
+  &--fourth-child {
+    position: relative;
+    bottom: 8px;
+    margin-left: 28px;
+    margin-top: -7px;
+  }
+
+  &--fifth-child {
+    margin-left: 44px;
+    margin-bottom: 7px;
+  }
+
+  &--sixth-child {
+    position: relative;
+    bottom: 7px;
+    margin-left: 28px;
+    margin-top: -7px;
+  }
+
+  &--seventh-child {
+    margin-left: 40px;
+    margin-bottom: 7px;
+  }
+
   @media (min-width: $table-width) {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     width: 100%;
+
+    &--first-child {
+      margin-left: 0;
+    }
+
+    &--second-child {
+      margin-left: 0;
+    }
+
+    &--third-child {
+      margin-top: -1px;
+      margin-left: 1px;
+    }
+
+    &--fourth-child {
+      margin-left: 1px;
+      margin-top: 6px;
+      margin-bottom: 1px;
+    }
+
+    &--fifth-child {
+      margin-top: 1px;
+      margin-left: 1px;
+    }
+
+    &--sixth-child {
+      margin-left: 1px;
+      margin-top: 6px;
+      margin-bottom: 3px;
+    }
+
+    &--seventh-child {
+      margin-top: -2px;
+      margin-left: 1px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 11px;
     width: 100%;
+
+    &--first-child {
+      margin-left: 1px;
+    }
+
+    &--second-child {
+      margin-left: 3px;
+    }
+
+    &--third-child {
+      margin-top: -2px;
+      margin-left: 1px;
+    }
+
+    &--fourth-child {
+      margin-top: -1px;
+      margin-left: -1px;
+      margin-bottom: 3px;
+    }
+
+    &--fifth-child {
+      margin-top: 1px;
+      margin-left: 1px;
+    }
+
+    &--sixth-child {
+      margin-top: 1px;
+      margin-left: -1px;
+      margin-bottom: 3px;
+    }
+
+    &--seventh-child {
+      margin-top: -2px;
+      margin-left: 1px;
+    }
   }
 }
 
@@ -211,16 +490,21 @@
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  margin-top: 9px;
+  margin-bottom: 20px;
+  margin-right: 2px;
+  word-spacing: 0.89px;
 
   @media (min-width: $table-width) {
     width: 165px;
     margin: 0 auto;
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 53px;
+    margin-bottom: 87px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     margin-bottom: 86px;
   }
 }
@@ -231,38 +515,47 @@
   justify-content: space-between;
 
   @media (min-width: $table-width) {
-    width: 248px;
+    max-width: 245px;
     margin-bottom: 14px;
+    margin-top: 2px;
+
+    &--even {
+      max-width: 250px;
+    }
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    &::before {
+    &::after {
       position: absolute;
       content: "";
       width: 250px;
       height: 1px;
-      top: 20px;
+      bottom: -9px;
       left: 0;
       background-color: $light-grey;
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 165px;
-    margin-bottom: 16px;
+    max-width: 163px;
+    margin-bottom: 13px;
+
+    &--even {
+      max-width: 170px;
+    }
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    &::before {
+    &::after {
       position: absolute;
       content: "";
       width: 169px;
       height: 1px;
-      top: 20px;
+      bottom: -10px;
       left: 0;
       background-color: $light-grey;
     }
