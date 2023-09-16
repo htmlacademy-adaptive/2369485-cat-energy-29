@@ -400,8 +400,40 @@
   .additional-goods__options {
     margin-right: 49px;
 
+    &--first-child {
+      width: 130px;
+    }
+
+    &--second-child {
+      width: 65px;
+    }
+
+    &--third-child {
+      width: 50px;
+    }
+
+    &--fourth-child {
+      width: 130px;
+    }
+
     &:last-child {
       margin-right: 0;
+    }
+
+    &--adopted-first {
+      width: 50px;
+    }
+
+    &--adopted-second {
+      width: 50px;
+    }
+
+    &--adopted-third {
+      width: 50px;
+    }
+
+    &--adopted-fourth {
+      width: 50px;
     }
   }
 }
