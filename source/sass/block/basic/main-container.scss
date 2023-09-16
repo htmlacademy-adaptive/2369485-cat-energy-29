@@ -34,16 +34,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
+    position: relative;
+    width: 1220px;
     margin-top: -234px;
     margin-bottom: 71px;
-    margin-left: 302px;
+    margin-left: 0;
+    left: 50%;
+    transform: translateX(-75.7%);
   }
 }
 
 .main-container__hero {
   position: relative;
-  padding: 27px 35px 10px 35px;
+  padding: 27px 0 10px 0;
   margin: 0 auto;
   z-index: 1;
   margin-bottom: 29px;
@@ -111,7 +114,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1224px;
     margin-bottom: 203px;
-    padding-left: 115px;
+    padding-left: 110px;
 
     &::before {
       display: none;
