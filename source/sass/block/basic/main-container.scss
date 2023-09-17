@@ -189,3 +189,15 @@
     padding-left: 110px;
   }
 }
+
+.main-container__background-proof {
+  background-color: #eaeaea;
+
+  @media (min-width: $table-width) {
+    background-color: $standard-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $card-color;
+  }
+}
