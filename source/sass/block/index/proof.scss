@@ -103,7 +103,7 @@
       background-image: url("../img/button-slider-images/button-slider-hover.svg");
     }
 
-    &:focus::after {
+    &:focus-visible::after {
       outline: 2px solid $standard-black;
     }
 
@@ -142,7 +142,7 @@
       background-image: url("../img/button-slider-images/button-slider-hover.svg");
     }
 
-    &:focus::after {
+    &:focus-visible::after {
       outline: 2px solid $standard-black;
     }
 
