@@ -81,17 +81,17 @@
 .location__wrapper-map {
   overflow: hidden;
   position: relative;
-  height: 362px;
-  width: 320px;
+  min-height: 362px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
 
   @media (min-width: $table-width) {
-    width: 768px;
-    height: 400px;
+    min-height: 400px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    height: 400px;
+    min-height: 400px;
   }
 }
 
@@ -99,7 +99,7 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   background-image: url("../img/map-images/map.png");/* stylelint-disable-next-line */
   background-image: image-set(url("../img/map-images/map.webp") type("image/webp"));

@@ -14,6 +14,18 @@
   }
 }
 
+.proof__container {
+  background-color: #eaeaea;
+
+  @media (min-width: $table-width) {
+    background-color: $standard-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $card-color;
+  }
+}
+
 .proof__description {
   margin-bottom: 20px;
   word-spacing: 1px;
@@ -103,7 +115,7 @@
       background-image: url("../img/button-slider-images/button-slider-hover.svg");
     }
 
-    &:focus::after {
+    &:focus-visible::after {
       outline: 2px solid $standard-black;
     }
 
@@ -142,7 +154,7 @@
       background-image: url("../img/button-slider-images/button-slider-hover.svg");
     }
 
-    &:focus::after {
+    &:focus-visible::after {
       outline: 2px solid $standard-black;
     }
 
@@ -359,7 +371,9 @@
     &::after {
       position: absolute;
       content: "";
-      width: 100%;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
       height: 462px;
       background-color: #eaeaea;
       z-index: -1;

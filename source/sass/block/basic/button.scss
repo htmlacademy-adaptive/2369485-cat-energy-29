@@ -36,7 +36,7 @@
       background-color: $button-hover;
     }
 
-    &:focus {
+    &:focus-visible {
       outline: 2px solid $standard-black;
     }
 
@@ -53,7 +53,7 @@
         background-color: #ebebeb;
       }
 
-      &:focus {
+      &:focus-visible {
         outline: 2px solid $standard-black;
       }
 
@@ -72,7 +72,7 @@
       background-color: $button-hover;
     }
 
-    &:focus {
+    &:focus-visible {
       outline: 2px solid $standard-black;
     }
 
@@ -89,7 +89,7 @@
         background-color: #ebebeb;
       }
 
-      &:focus {
+      &:focus-visible {
         outline: 2px solid $standard-black;
       }
 
