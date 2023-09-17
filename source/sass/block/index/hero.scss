@@ -3,7 +3,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: 320px;
+    width: 100vw;
     min-height: 64%;
     top: 0;
     left: 50%;
@@ -43,7 +43,7 @@
     &::before {
       position: absolute;
       content: "";
-      min-width: 720px;
+      width: 50vw;
       min-height: 77.7%;
       box-sizing: border-box;
       top: -115px;
@@ -59,7 +59,7 @@
     &::before {
       background-image: url("../img/hero-images/index-background-desktop.jpg");
       background-repeat: no-repeat;
-      background-size: auto;
+      background-size: cover;
       background-position: center;
       z-index: -2;
 
