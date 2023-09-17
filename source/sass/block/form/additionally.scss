@@ -9,11 +9,11 @@
   &::before {
     position: absolute;
     content: "";
-    width: 139px;
+    width: 4000px;
     height: 2px;
     top: 21px;
     transform: translateY(-50%);
-    right: -159px;
+    right: -4020px;
     background-color: $base-color;
   }
 
@@ -26,22 +26,22 @@
     &::after {
       position: absolute;
       content: "";
-      width: 30px;
+      width: 4000px;
       height: 2px;
       top: 23px;
       transform: translateY(-50%);
-      left: -70px;
+      left: -4040px;
       background-color: $base-color;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 446px;
+      width: 4000px;
       height: 2px;
       top: 23px;
       transform: translateY(-50%);
-      right: -483px;
+      right: -4037px;
       background-color: $base-color;
     }
   }
@@ -54,22 +54,22 @@
     &::after {
       position: absolute;
       content: "";
-      width: 70px;
+      width: 4000px;
       height: 2px;
       top: 23px;
       transform: translateY(-50%);
-      left: -110px;
+      left: -4040px;
       background-color: $base-color;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 1078px;
+      width: 4000px;
       height: 2px;
       top: 24px;
       transform: translateY(-50%);
-      right: -1115px;
+      right: -4038px;
       background-color: $base-color;
     }
   }
