@@ -7,11 +7,11 @@
   &::before {
     position: absolute;
     content: "";
-    width: 54px;
+    width: 4000px;
     height: 2px;
     top: 22px;
     transform: translateY(-50%);
-    right: -20px;
+    right: -3965px;
     background-color: $base-color;
   }
 
@@ -24,22 +24,22 @@
     &::after {
       position: absolute;
       content: "";
-      width: 30px;
+      width: 4000px;
       height: 2px;
       top: 23px;
       transform: translateY(-50%);
-      left: -69px;
+      left: -4038px;
       background-color: $base-color;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 320px;
+      width: 4000px;
       height: 2px;
       top: 22px;
       transform: translateY(-50%);
-      right: -360px;
+      right: -4040px;
       background-color: $base-color;
     }
   }
@@ -53,22 +53,22 @@
     &::after {
       position: absolute;
       content: "";
-      width: 70px;
+      width: 4000px;
       height: 2px;
-      top: 65%;
+      top: 66%;
       transform: translateY(-50%);
-      left: -110px;
+      left: -4040px;
       background-color: $base-color;
     }
 
     &::before {
       position: absolute;
       content: "";
-      width: 952px;
+      width: 4000px;
       height: 2px;
       top: 66%;
       transform: translateY(-50%);
-      right: -990px;
+      right: -4037px;
       background-color: $base-color;
     }
   }
