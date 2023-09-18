@@ -82,6 +82,14 @@
   }
 }
 
+.contact-details__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .contact-details__control-input {
   position: relative;
   min-width: 217px;

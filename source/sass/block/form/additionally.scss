@@ -196,6 +196,10 @@
   }
 }
 
+.additionally__control-input:focus-visible + .additionally__control-mark {
+  outline: $focus;
+}
+
 .additionally__control-mark {
   position: absolute;
   top: 50%;
@@ -219,24 +223,5 @@
   @media (min-width: $desktop-width) {
     width: 38px;
     height: 38px;
-  }
-}
-
-.control-input[type="checkbox"]:checked + .additionally__control-mark::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/tick-catalog-add-mobile.svg");
-  height: 26px;
-  width: 26px;
-  left: 54%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  @media (min-width: $table-width) {
-    background-image: url("../img/tick-catalog-add.svg");
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/tick-catalog-add.svg");
   }
 }

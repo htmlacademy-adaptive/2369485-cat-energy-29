@@ -51,6 +51,10 @@
   width: 280px;
   min-height: 301px;
 
+  .no-js & {
+    margin-top: 200px;
+  }
+
   @media (min-width: $table-width) {
     margin-top: 75px;
     width: 708px;
