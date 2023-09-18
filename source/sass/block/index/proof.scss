@@ -23,8 +23,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    word-spacing: 0;
-    width: 425px;
+    word-spacing: 0.3px;
+    width: 436px;
     margin-bottom: 68px;
   }
 }
@@ -334,7 +334,7 @@
     }
 
     &--secondary {
-      width: 124px;
+      width: 125px;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
