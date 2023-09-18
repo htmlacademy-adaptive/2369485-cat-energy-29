@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
     <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
@@ -15,7 +12,7 @@
     <link rel="manifest" href="../manifest.webmanifest">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page__body body">
+  <body class="page__body body no-js">
     <header class="body__main-header body__main-header main-header main-header--index">
       <a class="main-header__logo" href="index.html">
         <picture>
@@ -63,7 +60,6 @@
             Занялся собой? Займись котом!
           </p>
         </div>
-        <div class="hero__images-wrapper">
           <picture>
             <source media="(min-width: 1440px)" type="image/webp" srcset="img/hero-images/hero-images-desktop.webp 1x, img/hero-images/hero-images-desktop@2x.webp 2x">
             <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-images/hero-images-table.webp 1x, img/hero-images/hero-images-table@2x.webp 2x">
@@ -72,7 +68,6 @@
             <source media="(min-width: 768px)" srcset="img/hero-images/hero-images-tablet.png 1x, img/hero-images/hero-images-tablet@2x.png 2x">
             <img class="hero__images" src="img/hero-images/hero-images.png" srcset="img/hero-images/hero-images@2x.png 2x" width="280" height="270" alt="Упаковка товара Cat Energy">
           </picture>
-        </div>
           <a class="hero__guide-button button" href="form.html">
             Подобрать программу
           </a>
@@ -133,7 +128,7 @@
           </li>
         </ul>
       </section>
-      <div class="proof__container">
+      <div class="main-container__background-proof">
         <section class="main-container__proof proof container">
           <div class="proof__text-wrapper">
             <h2 class="proof__title title">
@@ -172,6 +167,9 @@
             <img class="proof__img-slider" src="img/slider-images/img-slider-1-phone.png" srcset="img/slider-images/img-slider-1-phone@2x.png 2x" width="280" height="256" alt="Фотография кота">
           </picture>
           <button class="proof__button-slider proof__button-slider--positioning" type="button">
+            <span class="visually-hidden">
+              Переключение слайда
+            </span>
           </button>
         </div>
       </section>
@@ -194,7 +192,7 @@
           </div>
       </section>
     </main>
-    <div class="main-footer__container">
+    <div class="body__background-footer">
       <footer class="body__main-footer main-footer">
         <div class="main-footer__logo-wrapper">
           <a class="main-footer__logo logo-lettering" href="#">
@@ -243,11 +241,14 @@
             </li>
           </ul>
         </section>
-        <div class="main-footer__link-wrapper--copyright">
+        <div class="main-footer__link-wrapper main-footer__link-wrapper--copyright">
           <a class="main-footer__copyright copyright-academy--state copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
           <a class="main-footer__link-academy copyright-academy--state copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">
+              HTML Academy
+            </span>
             <svg class="main-footer__academy-images" width="27" height="34">
               <use href="img/sprite.svg#logo-academy"></use>
             </svg>

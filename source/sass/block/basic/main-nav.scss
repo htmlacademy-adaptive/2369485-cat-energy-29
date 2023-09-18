@@ -41,6 +41,10 @@
       top: 34px;
     }
   }
+
+  // .no-js & {
+  //   position: relative;
+  // }
 }
 
 .main-nav__toggle {
@@ -58,6 +62,11 @@
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+
+  .no-js & {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 

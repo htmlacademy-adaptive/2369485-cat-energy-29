@@ -35,7 +35,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 245px);
-    row-gap: 143px;
+    row-gap: 146px;
     column-gap: 80px;
   }
 }
@@ -85,6 +85,7 @@
     min-height: 430px;
     padding-left: 36px;
     padding-right: 36px;
+    padding-bottom: 37px;
     box-sizing: border-box;
     background-color: $card-color;
 
@@ -100,10 +101,8 @@
   @media (min-width: $desktop-width) {
     position: relative;
     margin-bottom: 0;
-    min-height: 431px;
-    padding-top: 0;
-    padding-left: 40px;
-    padding-right: 36px;
+    min-height: 430px;
+    padding: 0 36px 37px 40px;
     box-sizing: border-box;
     background-color: $card-color;
 
@@ -447,18 +446,18 @@
     }
 
     &--fifth-child {
-      margin-top: 1px;
+      margin-top: -2px;
       margin-left: 1px;
     }
 
     &--sixth-child {
-      margin-top: 1px;
+      margin-top: -2px;
       margin-left: -1px;
       margin-bottom: 3px;
     }
 
     &--seventh-child {
-      margin-top: -2px;
+      margin-top: -5px;
       margin-left: 1px;
     }
   }
@@ -496,16 +495,17 @@
   word-spacing: 0.89px;
 
   @media (min-width: $table-width) {
-    width: 165px;
+    width: 167px;
     margin: 0 auto;
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 87px;
+    margin-bottom: auto;
   }
 
   @media (min-width: $desktop-width) {
+    width: 167px;
     margin-top: 0;
-    margin-bottom: 86px;
+    margin-bottom: auto;
   }
 }
 
@@ -539,7 +539,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 163px;
+    max-width: 166px;
     margin-bottom: 13px;
 
     &--even {
@@ -599,7 +599,7 @@
   .catalog-food__item--secondary {
     display: flex;
     flex-direction: column;
-    padding-top: 161px;
+    padding-top: 158px;
     background-image: url("../img/plus-images/plus-table.svg");
     background-repeat: no-repeat;
     padding-left: 35px;

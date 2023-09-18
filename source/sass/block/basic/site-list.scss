@@ -70,6 +70,10 @@
 
 .site-list--hidden {
   display: none;
+
+  .no-js & {
+    display: block;
+  }
 }
 
 .site-list__item {

@@ -42,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 512px;
+    width: 514px;
     margin-bottom: 76px;
     text-transform: inherit;
 
@@ -79,6 +79,14 @@
 
   @media (min-width: $table-width) {
     margin-bottom: 20px;
+  }
+}
+
+.contact-details__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
