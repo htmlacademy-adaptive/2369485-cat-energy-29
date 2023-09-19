@@ -8,7 +8,7 @@ buttonTog.onclick = function(){
   burgerSpan.classList.toggle("main-nav__burger--close");
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const nojs = document.querySelector(".no-js");
 
   if (nojs) {
